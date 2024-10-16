@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: api/ontap.html 
+keywords: netapp products, product api, rest, rest api, ontap, ontap 9 
+summary: NetApp ONTAP es el software de gestión de datos líder del sector para puestas en marcha tanto en el cloud como en las instalaciones. ONTAP incluye una única API DE REST común que se sigue ampliando y mejorando con cada versión. Consulte la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar sus puestas en marcha de ONTAP. 
+---
+= ONTAP 9
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp ONTAP es el software de gestión de datos líder del sector para puestas en marcha tanto en el cloud como en las instalaciones. ONTAP incluye una única API DE REST común que se sigue ampliando y mejorando con cada versión. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tus puestas en marcha de ONTAP mediante la API de REST DE ONTAP.
+
+.API REST de ONTAP
+Es posible usar la API de REST para automatizar la administración de sus implementaciones de ONTAP.
+
+* https://docs.netapp.com/us-en/ontap-automation/["Documentación de automatización de ONTAP"^]
+
+
+.Familia ONTAP
+La documentación de la familia de ONTAP incluye todo lo que necesita para instalar y administrar sus implementaciones de ONTAP.
+
+* https://docs.netapp.com/us-en/ontap-family/["Documentación de productos de ONTAP"^]
+

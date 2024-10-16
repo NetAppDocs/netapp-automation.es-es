@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="fe83b5bb680363dfa2e7469ad32ab2a2" category="summary">NetApp actualiza regularmente las soluciones de automatización, las API DE REST de productos y el software relacionado para ofrecer nuevas funciones, mejoras y correcciones de errores.</block>
+  <block id="eb61a516e22f11288267df691cf1b923" category="doc">Novedades de la automatización de NetApp</block>
+  <block id="bcceca8869689ff6b9a64bbe278abd0c" category="section-title">27 de julio de 2023</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="paragraph-title">Cloud Volumes ONTAP</block>
+  <block id="80f04f9588f7f688eede752c575378eb" category="paragraph">La compatibilidad con Cloud Volumes ONTAP está organizada por el entorno de cloud público. Se proporciona una nueva solución para el siguiente entorno de cloud:</block>
+  <block id="6f1c0c750e9768b867971c7aec4b802a" category="inline-link-macro">Cloud Volumes ONTAP para Google Cloud: Estallido a la nube</block>
+  <block id="51b1fcf610d89fbb7fcc404e66170c46" category="list-text"><block ref="51b1fcf610d89fbb7fcc404e66170c46" category="inline-link-macro-rx"></block></block>
+  <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">04 de junio de 2023</block>
+  <block id="2b86317cf346d1bf47abc8c04df6f353" category="inline-link">Catálogo de automatización de BlueXP</block>
+  <block id="4a6e9c26b5dcd413ed786dfb7f40048d" category="paragraph">NetApp<block ref="d5edd64e969d71f966838509aa534b4a" category="inline-link-rx"></block> está disponible en la interfaz de usuario web de BlueXP . El catálogo de automatización ofrece acceso a soluciones que pueden ayudarlo con la implementación e integración automatizadas de los productos NetApp. La documentación de estas soluciones está organizada en varios productos o áreas funcionales diferentes, como se describe a continuación.</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="paragraph-title">Amazon FSX para ONTAP de NetApp</block>
+  <block id="dd2366f4769cebfaf4ff4e9a630568f3" category="paragraph">A continuación se proporcionan dos soluciones de Amazon FSx para NetApp ONTAP:</block>
+  <block id="2fd2fe753edead740ad217396fc3507d" category="inline-link-macro">Amazon FSx para NetApp ONTAP: Estallido a la nube</block>
+  <block id="818c98202f75fa15bb74a5c187002203" category="list-text"><block ref="818c98202f75fa15bb74a5c187002203" category="inline-link-macro-rx"></block></block>
+  <block id="0a23ec395dc444cc8327a11e2b2c16ea" category="inline-link-macro">Amazon FSx para NetApp ONTAP: Recuperación ante desastres</block>
+  <block id="64ed0ae989e214d192d00f70b7b85023" category="list-text"><block ref="64ed0ae989e214d192d00f70b7b85023" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="paragraph-title">Azure NetApp Files</block>
+  <block id="8d62054a2d10c801009b6dda6a47de89" category="paragraph">Se incluye una solución para ayudarle a poner en marcha Oracle con Azure NetApp Files:</block>
+  <block id="6aeba605d4356667f1779f834d402cf6" category="inline-link-macro">Oracle con Azure NetApp Files</block>
+  <block id="3acf7f6359b05661834e2dfc3aa166c2" category="list-text"><block ref="3acf7f6359b05661834e2dfc3aa166c2" category="inline-link-macro-rx"></block></block>
+  <block id="8eb6cbd72bce1921bec645ee43381791" category="paragraph">La compatibilidad con Cloud Volumes ONTAP está organizada por el entorno de cloud público. Las soluciones iniciales se proporcionan para dos entornos cloud de la siguiente manera:</block>
+  <block id="075b6c0934402a66775b6271f06d07e9" category="inline-link-macro">AWS de Cloud Volumes ONTAP: Ráfagas en la nube</block>
+  <block id="452c1dc28efab2b3bd2bdbcc4c7895b3" category="list-text"><block ref="452c1dc28efab2b3bd2bdbcc4c7895b3" category="inline-link-macro-rx"></block></block>
+  <block id="b055721f7167f124318a982243e345f4" category="inline-link-macro">Cloud Volumes ONTAP Azure: Ráfagas a la nube</block>
+  <block id="ea656fded1696fa5bc4ba86be5575ba6" category="list-text"><block ref="ea656fded1696fa5bc4ba86be5575ba6" category="inline-link-macro-rx"></block></block>
+  <block id="2996204d011d1a19281f6a8dac674bb8" category="summary">Active IQ Unified Manager (anteriormente Unified Manager de OnCommand) proporciona gestión y supervisión integrales para sus sistemas de ONTAP. También incluye una API DE REST para automatizar estas tareas y permitir la integración de terceros en sistemas compatibles.</block>
+  <block id="5ecb6b24c169667ff1a176768115659e" category="doc">Active IQ Unified Manager</block>
+  <block id="ab7e5b403a30f23c3ce89af26a47d7cb" category="section-title">Beneficios de la API de REST</block>
+  <block id="0197af9aefc696a588ad65a18ca5aa7e" category="paragraph">Hay varios beneficios cuando se usa la API DE REST que se proporciona con Active IQ Unified Manager.</block>
+  <block id="18ba77ed575ca418ccc98b89cc36afcd" category="paragraph-title">Funcionalidades robustas</block>
+  <block id="d3a93f1f6f515e356ddc3c45f110ec5a" category="paragraph">Al utilizar la API de REST, puede acceder a las funcionalidades de Active IQ Unified Manager para gestionar los riesgos de disponibilidad, capacidad, seguridad, protección y rendimiento del almacenamiento.</block>
+  <block id="abaff03d710267d4be810405db7ee2b0" category="paragraph-title">Consolidación de la automatización</block>
+  <block id="7ec408b5322b2a1e8905712b17244946" category="paragraph">Hay un único extremo de REST disponible para aprovisionar y gestionar tus cargas de trabajo. Esto ofrece un enfoque consolidado sencillo para implementar políticas de objetivos de nivel de servicio, redirigir eventos a herramientas de terceros y actuar como pasarela de API para acceder a la API de REST DE ONTAP a nivel de clúster individual.</block>
+  <block id="362087a9dd4e9fc754716d8cc9c17b39" category="paragraph-title">Automatización en el nivel de centro de datos de la gestión de ONTAP</block>
+  <block id="d77bf4fbd936b7bff8d15d0fc46ada13" category="paragraph">Puede automatizar los flujos de trabajo de aprovisionamiento y gestión de ONTAP a nivel de centro de datos. La supervisión y la creación de informes también se pueden automatizar. Esto mejora la eficiencia y proporciona una base para la agregación a nivel de centro de datos.</block>
+  <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="section-title">Obtenga más información</block>
+  <block id="75c92b6a932fa0b69e22776f82111fc7" category="paragraph">Hay varios recursos disponibles para ayudarte a empezar a usar la API de REST DE Active IQ Unified Manager.</block>
+  <block id="ffef03803be76fabe5b17e1b0cca3ca2" category="inline-link">Primeros pasos con API de REST de Active IQ Unified Manager</block>
+  <block id="b0520d78b7fbab3be3c8c907503f292a" category="list-text"><block ref="b0520d78b7fbab3be3c8c907503f292a" category="inline-link-rx"></block></block>
+  <block id="4e7c6efa2c399d4a0407e2cd96f9d432" category="inline-link">Documentación sobre la API de Active IQ Unified Manager</block>
+  <block id="200d17820d7891509722654947f03c8c" category="list-text"><block ref="200d17820d7891509722654947f03c8c" category="inline-link-rx"></block></block>
+  <block id="d01ffb84c3a4b21920fac864c694921c" category="inline-link">Módulos de NetApp para Ansible</block>
+  <block id="d4eb2098a66a5dfd4ca374a56189cd32" category="list-text"><block ref="d4eb2098a66a5dfd4ca374a56189cd32" category="inline-link-rx"></block></block>
+  <block id="379c1b2c5f736ef87c1e3f94f951b53d" category="summary">Astra Control es un producto de software de NetApp que proporciona gestión de datos para aplicaciones de clústeres de Kubernetes en múltiples entornos. Los dos modelos de implementación comparten una API de REST común. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tus puestas en marcha de Astra.</block>
+  <block id="aabd9360d69086aa78c24d087317998e" category="doc">Control Astra</block>
+  <block id="cd20c8579964fea43bbdc959d6350ba6" category="paragraph">Astra Control es un producto de software de NetApp que proporciona gestión de datos para aplicaciones de clústeres de Kubernetes en múltiples entornos. Los dos modelos de implementación comparten una API de REST común. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tus puestas en marcha de Astra mediante la API de REST DE Astra Control.</block>
+  <block id="676bd50e0f10e6725dc7a68e3041cfed" category="paragraph-title">API REST de Astra Control</block>
+  <block id="bc8b1919523d4f7f0859e495e4897fca" category="paragraph">Puedes utilizar la API de REST para automatizar la administración de tus puestas en marcha de Astra Control Service y Astra Control Center.</block>
+  <block id="1a0ca7f0a5aea880c24d544b4655d6ed" category="inline-link">Documentación de Astra Control Automation</block>
+  <block id="faaa5531f226b4c786f8b3b21869030c" category="list-text"><block ref="faaa5531f226b4c786f8b3b21869030c" category="inline-link-rx"></block></block>
+  <block id="1b92d5678e266ca01e6cce8b6ab8a786" category="paragraph-title">La familia Astra</block>
+  <block id="af9fe0e9b5ea86420daeb5098df7e9b9" category="paragraph">La documentación de la familia Astra incluye todo lo que necesitas para instalar y administrar Astra y el software relacionado.</block>
+  <block id="4b675e54aa1095b2b20f8c4019de37b0" category="inline-link">Documentación de Astra</block>
+  <block id="4d1e53b602f4f36aaeb2beabbbe99b9e" category="list-text"><block ref="4d1e53b602f4f36aaeb2beabbbe99b9e" category="inline-link-rx"></block></block>
+  <block id="8ea149be88a341fade2aeb68d94b862c" category="summary">NetApp BlueXP  BlueXP  es un plano de control unificado que proporciona una plataforma multicloud híbrida para administrar servicios de almacenamiento y datos en entornos on-premises y de nube pública. Está compuesto por varios servicios o componentes distintos, cada uno de los cuales expone una API de REST asociada. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tu entorno de BlueXP .</block>
+  <block id="26181faa46a5ff13906f28fd43c2474c" category="doc">Plano de control de BlueXP </block>
+  <block id="f61db6f9b045e79f79499496d5acd04d" category="paragraph">NetApp BlueXP  BlueXP  es un plano de control unificado que proporciona una plataforma multicloud híbrida para administrar servicios de almacenamiento y datos en entornos on-premises y de nube pública. Está compuesto por varios servicios o componentes distintos, cada uno de los cuales expone una API de REST asociada. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tu entorno de BlueXP  con las API DE REST DE BlueXP .</block>
+  <block id="9bd035b3034a7fcd5d8d82adcefd030c" category="paragraph-title">API DE REST de BlueXP </block>
+  <block id="eb039644918e25d625d499bf1ae3a949" category="paragraph">Es posible usar varias API de REST para automatizar la administración de su almacenamiento y de servicios de datos que gestiona BlueXP .</block>
+  <block id="cfdec364233bc50bcbd67820cf4d5943" category="inline-link">Documentación de la API de BlueXP</block>
+  <block id="16017eedea8732d7858f0907cb028a49" category="list-text"><block ref="16017eedea8732d7858f0907cb028a49" category="inline-link-rx"></block></block>
+  <block id="a8af7bb7f6fb22d8f1a96ec466769607" category="paragraph-title">Familia BlueXP </block>
+  <block id="662574e5f356f9729de2c50ac6fb18a2" category="paragraph">La documentación de la familia BlueXP  incluye todo lo que necesita para empezar a usar el plano de control de BlueXP .</block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">Documentación de BlueXP</block>
+  <block id="1c74bcfdef9917ce07420aafab8bce83" category="list-text"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
+  <block id="ff2f8ba07cc078fa269e736e685cf654" category="summary">NetApp ONTAP es el software de gestión de datos líder del sector para puestas en marcha tanto en el cloud como en las instalaciones. ONTAP incluye una única API DE REST común que se sigue ampliando y mejorando con cada versión. Consulte la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar sus puestas en marcha de ONTAP.</block>
+  <block id="203165a49e3a391bdbc44e3a05d54279" category="doc">ONTAP 9</block>
+  <block id="c681e8eddcefccf18ec60d7786f0e796" category="paragraph">NetApp ONTAP es el software de gestión de datos líder del sector para puestas en marcha tanto en el cloud como en las instalaciones. ONTAP incluye una única API DE REST común que se sigue ampliando y mejorando con cada versión. Consulta la documentación y los recursos relacionados que se proporcionan a continuación para empezar a automatizar tus puestas en marcha de ONTAP mediante la API de REST DE ONTAP.</block>
+  <block id="0ec641cfacd36c8e22a334135e2abdac" category="paragraph-title">API REST de ONTAP</block>
+  <block id="93f081a7384e0c442cfe6f4ebbc38992" category="paragraph">Es posible usar la API de REST para automatizar la administración de sus implementaciones de ONTAP.</block>
+  <block id="ec033dcf5fdadae0c2ee4fad5b7980ac" category="inline-link">Documentación de automatización de ONTAP</block>
+  <block id="556d06a351b4084e5ff2bf006ee89f0f" category="list-text"><block ref="556d06a351b4084e5ff2bf006ee89f0f" category="inline-link-rx"></block></block>
+  <block id="19c3aa80eb958bede5080c6e3909d52e" category="paragraph-title">Familia ONTAP</block>
+  <block id="43b75dde49bffd1592bd3797a5bd4d18" category="paragraph">La documentación de la familia de ONTAP incluye todo lo que necesita para instalar y administrar sus implementaciones de ONTAP.</block>
+  <block id="274bc582ca884fc158ea9ac9f79f9067" category="inline-link">Documentación de productos de ONTAP</block>
+  <block id="4b182de5b5a8774ae02c6590c4614991" category="list-text"><block ref="4b182de5b5a8774ae02c6590c4614991" category="inline-link-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marcas comerciales</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, el logotipo de NETAPP y las marcas enumeradas en la página de marcas comerciales de NetApp son marcas comerciales de NetApp, Inc. Los demás nombres de empresas y productos son marcas comerciales de sus respectivos propietarios.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Estadounidenses</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Puede encontrar una lista actual de las patentes propiedad de NetApp en:</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidad</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código abierto</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
+  <block id="b2a8c873c342c10120e2b19ecdc226e4" category="summary">Puede usar esta solución de automatización para aprovisionar volúmenes Azure NetApp Files e instalar Oracle en una máquina virtual disponible. A continuación, Oracle utiliza los volúmenes para el almacenamiento de datos.</block>
+  <block id="62db87571a424ff49bba9d68eafd08c2" category="doc">Instalar Oracle mediante Azure NetApp Files</block>
+  <block id="8cced99bb2c53ac400085323c360c27d" category="paragraph-title">Acerca de esta solución</block>
+  <block id="29cd032c66e79cab77eb0fed6ee6cfdc" category="paragraph">En general, el código de automatización proporcionado con esta solución realiza las siguientes acciones:</block>
+  <block id="5ca0221f044a0157099e224110f2a8a6" category="list-text">Configure una cuenta de NetApp en Azure</block>
+  <block id="7083799a2b6d70dc395a14e97eca2472" category="list-text">Configure un pool de capacidad de almacenamiento en Azure</block>
+  <block id="e41e5069ad617c037d6ae3ba45555e87" category="list-text">Aprovisione los volúmenes Azure NetApp Files según la definición</block>
+  <block id="fe70d326231fc7219c0a1203800af458" category="list-text">Cree los puntos de montaje</block>
+  <block id="4f17ac5934083c1358967dbbcfe5dfec" category="list-text">Monte los volúmenes Azure NetApp Files en los puntos de montaje</block>
+  <block id="0f01d98bbad6fa979bb5dca30cdcab4d" category="list-text">Instale Oracle en el servidor Linux</block>
+  <block id="d0cde19ca841017fe525b0a0a12a1a41" category="list-text">Cree los listeners y la base de datos</block>
+  <block id="362e3754774846370b84b611ba85faf3" category="list-text">Crear Bases de Datos de Conexión (PDB)</block>
+  <block id="3ad3b48e0e608d3aa47ef6eb5a923fd2" category="list-text">Inicie el listener y la instancia de Oracle</block>
+  <block id="84535c3fc8745d85206dddd158e0ecf0" category="list-text">Instale y configure la<block ref="f11c70e98fb3206ac6eeae40be288750" prefix=" " category="inline-code"></block> utilidad para tomar una instantánea</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Antes de empezar</block>
+  <block id="ec2287b43dcb904e9e447bc893387f90" category="paragraph">Debe tener lo siguiente para completar la instalación:</block>
+  <block id="fa9fd8ccee9b7746e7af45da8bae09fc" category="list-text">Debe descargar<block ref="0a8799be60006964a5d8d0bc1c2761c3" category="inline-link-rx"></block> la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como archivo<block ref="bc18238b0e7defc6245f2b37d9c3bf66" prefix=" " category="inline-code"></block>.</block>
+  <block id="f0ff28f900626e4afdc09ae17f91d944" category="list-text">Una VM de Linux con las siguientes características:</block>
+  <block id="ce7a9811f47fcf7e3d9c61ce01f5fec6" category="list-text">RHEL 8 (Standard_D8s_v3-RHEL-8)</block>
+  <block id="9d173695cad8e6b2a0fd1bb066bc45fd" category="list-text">Se implementa en la misma red virtual de Azure utilizada para el aprovisionamiento de Azure NetApp Files</block>
+  <block id="74e40c1b4e03509a53b3fcbed5ad2cb7" category="list-text">Una cuenta de Azure</block>
+  <block id="cb537ea2ce9d8625b1479313f31317be" category="paragraph">La solución de automatización se proporciona como una imagen y se ejecuta con Docker y Docker Compose. Debe instalar ambos en la máquina virtual Linux como se describe a continuación.</block>
+  <block id="bb4d5072606b7525a35f9a22fd7c8889" category="paragraph">También debe registrar la VM con RedHat mediante el comando<block ref="d4922d322768afb39986c3a3eddf0e84" prefix=" " category="inline-code"></block>. El comando le solicitará las credenciales de su cuenta. Si es necesario, puede crear una cuenta en \https://developers.redhat.com/.</block>
+  <block id="cedcef2187befe8bcd075bbaba2c9c34" category="section-title">Paso 1: Instale y configure Docker</block>
+  <block id="7b2a727fa9f8e980896b4bd950853036" category="paragraph">Instalar y configurar Docker en una máquina virtual de RHEL 8 Linux.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Pasos</block>
+  <block id="37f319257119e3cd2641cbf308f478eb" category="list-text">Instale el software Docker con los siguientes comandos.</block>
+  <block id="3f5202ac88435a5d78f647880e907be4" category="list-text">Inicie Docker y muestre la versión para confirmar que la instalación se ha realizado correctamente.</block>
+  <block id="551124750acebb94da9141562d5e2213" category="list-text">Añada el grupo Linux requerido con un usuario asociado.</block>
+  <block id="7fb2ecf00f626107bd95e9b977af6cce" category="paragraph">Primero comprueba si el grupo *docker* existe en tu sistema Linux. Si no es así, cree el grupo y agregue el usuario. De forma predeterminada, el usuario de shell actual se agrega al grupo.</block>
+  <block id="c9bee8fb002ac0a519ad37957028a0a2" category="list-text">Active las nuevas definiciones de grupo y usuario</block>
+  <block id="979d80edc3cfd4bda3116c4e008c0f2a" category="paragraph">Si ha creado un nuevo grupo con un usuario, debe activar las definiciones. Para ello, puede cerrar la sesión de Linux y volver a iniciarla. O bien puede ejecutar el siguiente comando.</block>
+  <block id="8ef3171d14be871238e0dbc33a85725e" category="section-title">Paso 2: Instale Docker Compose y las utilidades NFS</block>
+  <block id="e5be632c59cc24eb32cfdade0bffa4b6" category="paragraph">Instale y configure Docker Compose junto con el paquete de utilidades NFS.</block>
+  <block id="b403d13d8c4b4d9e637bc243bc8cb489" category="list-text">Instale Docker Compose y muestre la versión para confirmar que la instalación se ha realizado correctamente.</block>
+  <block id="385010ae5bb45b8f03a98484e56a91f8" category="list-text">Instale el paquete de utilidades NFS.</block>
+  <block id="bdaa0a85c21006e1621137e9e56663f4" category="section-title">Paso 3: Descargue los archivos de instalación de Oracle</block>
+  <block id="d0614abb6a37d0428057d9be3669c159" category="paragraph">Descargue la instalación y los archivos de parches de Oracle necesarios, así como la<block ref="f11c70e98fb3206ac6eeae40be288750" prefix=" " category="inline-code"></block> utilidad.</block>
+  <block id="0720a1d7f48eef8802843097cc7b9c3e" category="list-text">Inicie sesión en su cuenta de Oracle según sea necesario.</block>
+  <block id="57bece468bae14009bd89fe7f7c303cf" category="list-text">Descargue los siguientes archivos.</block>
+  <block id="0b27918290ff5323bea1e3b78a9cf04e" category="cell">Archivo</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Descripción</block>
+  <block id="ef67f2edcee3ab2f251990fe6b44dde0" category="cell">LINUX.X64_193000_db_home.zip</block>
+  <block id="c29656fc9d1a5cae77ee5e76519ecac7" category="cell">instalador de base 19,3</block>
+  <block id="743837609d6cbc2e8ea9463873a349b3" category="cell">p31281355_190000_Linux-x86-64.zip</block>
+  <block id="133520cf269609b74b607d28c66f535d" category="cell">19,8 parche RU</block>
+  <block id="63628571f2dfaeb6f0a0a676290e6e82" category="cell">p6880880_190000_Linux-x86-64.zip</block>
+  <block id="35fca6e17a1875f4771154a16de61781" category="cell">opatch versión 12.2.0.1.23</block>
+  <block id="3d16a3d1b8fc7ff5f84f8cb765aa44e0" category="cell">azacsnap_installer_v5.0.run</block>
+  <block id="50d653389b281143f4c1075e227634b3" category="cell">instalador de azacsnap</block>
+  <block id="9c15f8078c76ae829f9eeb97772b6f37" category="list-text">Coloque todos los archivos de instalación en la carpeta<block ref="d66a510d21988f96fd9c018f6843c729" prefix=" " category="inline-code"></block>.</block>
+  <block id="6fdc6835addb26829034b7905ecc6561" category="list-text">Asegúrese de que todos los usuarios del servidor de bases de datos tengan acceso completo (lectura, escritura, ejecución) a la carpeta<block ref="d66a510d21988f96fd9c018f6843c729" prefix=" " category="inline-code"></block>.</block>
+  <block id="ea4ef193486d7b40f35a73482a455692" category="section-title">Paso 4: Preparar la imagen de Docker</block>
+  <block id="e61d612f0de70686d0c2414292fdbd56" category="paragraph">Debe extraer y cargar la imagen de Docker proporcionada con la solución de automatización.</block>
+  <block id="35825d38402b3adb74b49e6d3a4e627f" category="list-text">Copie el archivo de la solución<block ref="bc18238b0e7defc6245f2b37d9c3bf66" prefix=" " category="inline-code"></block> en la máquina virtual donde se ejecutará el código de automatización.</block>
+  <block id="abed44481571ba7bbe8763c70dc42715" category="paragraph">El parámetro de entrada<block ref="043160dcb5097e884764ebf29a002108" prefix=" " category="inline-code"></block> es el archivo de clave privada utilizado para la autenticación de máquinas virtuales de Azure.</block>
+  <block id="8dee74621630c5c92f93f7148c6bc122" category="list-text">Desplácese a la carpeta correcta con el archivo de solución y descomprima el archivo.</block>
+  <block id="019452dd5adfcf9935b476b0b06da646" category="list-text">Navegue a la nueva carpeta<block ref="3c34406a304ad5dfa671ef73ad264a2c" prefix=" " category="inline-code"></block> creada con la operación de descompresión y enumere los archivos. Debería ver el archivo<block ref="44bc3f3b38963561d52575413ea33442" prefix=" " category="inline-code"></block>.</block>
+  <block id="22dda4e93f7648d527141024523bfb07" category="list-text">Cargue el archivo de imagen de Docker. La operación de carga debería completarse normalmente en unos segundos.</block>
+  <block id="02a65a322fe420fffd5a963f14701fae" category="list-text">Confirme que se ha cargado la imagen de Docker.</block>
+  <block id="d09bd29196f4271748dd52cd6e978b34" category="paragraph">Deberías ver la imagen de Docker<block ref="aaad05ca0732907813f9ee1688aecd5e" prefix=" " category="inline-code"></block> con la etiqueta<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block>.</block>
+  <block id="c3218dd8c5ef76776a81b58dc60150be" category="section-title">Paso 5: Cree un volumen externo</block>
+  <block id="463236aa823f732f65d83fb3c45562db" category="paragraph">Necesita un volumen externo para asegurarse de que los archivos de estado de Terraform y otros archivos importantes son persistentes. Estos archivos deben estar disponibles para que Terraform ejecute el flujo de trabajo y las implementaciones.</block>
+  <block id="7cf47b074e255ec32fd1c18910740d6d" category="list-text">Cree un volumen externo fuera de Docker Compose.</block>
+  <block id="984d9915587b25d25fb0606ce1ae0284" category="paragraph">Asegúrese de actualizar el nombre del volumen antes de ejecutar el comando.</block>
+  <block id="1defe26da2049b6fbc267f6b9aeab973" category="list-text">Añada la ruta al volumen externo al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo de entorno mediante el comando:</block>
+  <block id="e43434c615e270f4ccc0dc59cbdbfb40" category="paragraph"><block ref="9fd5589b0f9a1dd3b3614dfe2ccefcd0" prefix="" category="inline-code"></block>.</block>
+  <block id="3cb6079ab5901726408fef321d94a6aa" category="paragraph">Recuerde mantener el contenido del archivo existente y el formato de dos puntos. Por ejemplo:</block>
+  <block id="b78cc54d0c2056d69472ad90e874e238" category="list-text">Actualice las variables de Terraform.</block>
+  <block id="bdc6b7957ca419bcdab972e07d23f2b7" category="list-text">Navegue a la carpeta<block ref="4d402ffa7c372a6f128c002083e358df" prefix=" " category="inline-code"></block>.</block>
+  <block id="97a25108cfcfed4f0b1ff536617f3329" category="list-text">Confirme que existen los dos archivos siguientes<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block>: Y<block ref="c9ac8098c5ea9d3e6a9a596ff0c512a4" prefix=" " category="inline-code"></block>.</block>
+  <block id="613baf2d6e688ec1283d68dae6cfb6ee" category="list-text">Actualice los valores en<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> según sea necesario para el entorno.</block>
+  <block id="2e62a257574a484eecfda93c308f8bdc" category="section-title">Paso 6: Instalar Oracle</block>
+  <block id="d43ffd976f88036c92262897c73e1d44" category="paragraph">Ahora puede provisionar e instalar Oracle.</block>
+  <block id="5ca29a07b0a619242090920640ac0492" category="list-text">Instale Oracle con la siguiente secuencia de comandos.</block>
+  <block id="27fa1b6b46b23860849e37ae2fc525ba" category="list-text">Vuelva a cargar las variables Bash y confirme mostrando el valor para<block ref="e1f651debac4f720c13ae930ff3ca14a" prefix=" " category="inline-code"></block>.</block>
+  <block id="87ffa2e9f3be49014dfdf5a8405740a7" category="list-text"><block ref="805cb08115ea35866092633125eb562f" prefix="" category="inline-code"></block></block>
+  <block id="13216747601217f01ee964d8f48a576f" category="list-text"><block ref="35014126f9193d9eaf983d129b92696a" prefix="" category="inline-code"></block></block>
+  <block id="fe54e73e7ef91fafaed363b549be97ac" category="list-text"><block ref="92d8bf20d4317412cbc8e11d376519ff" prefix="" category="inline-code"></block></block>
+  <block id="6fb91845c4456c82e4b147091807cb9c" category="list-text">Debe poder conectarse a Oracle.</block>
+  <block id="b717ef0930b21e08f325231b884b11f7" category="section-title">Paso 7: Validar la instalación de Oracle</block>
+  <block id="677e417cf18c088283647ac494763c5c" category="paragraph">Debe confirmar que la instalación de Oracle se ha realizado correctamente.</block>
+  <block id="5adc0bc482e39ddfebafe21cbcc316ad" category="list-text">Conéctese al servidor Oracle de Linux y muestre una lista de los procesos de Oracle. Esto confirma que la instalación se ha completado como se esperaba y que la base de datos Oracle se está ejecutando.</block>
+  <block id="a23c64f9f0cec5b000d379bccd90e16d" category="list-text">Conéctese a la base de datos para examinar la configuración de la base de datos y confirmar que las PDB se han creado correctamente.</block>
+  <block id="d0848afd8553c34945705222a97a4553" category="paragraph">Debería ver una salida similar a la siguiente:</block>
+  <block id="3c819d77bedaa0aa958c54f3fa3b4703" category="list-text">Ejecute unos sencillos comandos SQL para confirmar que la base de datos está disponible.</block>
+  <block id="bc777dbd9b10c524d2a56c3a81d35237" category="section-title">Paso 8: Instale la utilidad azacsnap y realice una copia de seguridad de instantáneas</block>
+  <block id="d3260476a07a46fb1a3d45f807dc9db2" category="paragraph">Debe instalar y ejecutar la<block ref="f11c70e98fb3206ac6eeae40be288750" prefix=" " category="inline-code"></block> utilidad para realizar un backup de snapshot.</block>
+  <block id="b586044135ee4d26f0e2e2b26756ce17" category="list-text">Instale el contenedor.</block>
+  <block id="ad5653056322c220a0957b4579f3384c" category="list-text">Cambie a la cuenta de usuario de instantánea.</block>
+  <block id="f63ca656bd0609cf06117323b5a130f9" category="list-text">Configurar un archivo de detalles de copia de seguridad de almacenamiento. Esto creará el<block ref="8ed8c6bfea85d72bc4a36772490109c7" prefix=" " category="inline-code"></block> archivo de configuración.</block>
+  <block id="76845b7c1954015192bebaaae9ba2fa9" category="list-text">Realizar un backup de snapshot.</block>
+  <block id="b7c0609220f6aeed4f1e0be47c445369" category="section-title">Paso 9: Opcionalmente, migre una PDB local a la nube</block>
+  <block id="2306ea5679b875866345d5cc165d8dda" category="paragraph">Opcionalmente, puede migrar la PDB local a la nube.</block>
+  <block id="24e5245e95d27e0a56ef8b0706ba1553" category="list-text">Configure las variables en<block ref="c08dfc5366dfe92564ab477174fbc285" prefix=" " category="inline-code"></block> los archivos según sea necesario para su entorno.</block>
+  <block id="dbbd032a05e7a2cc75750ffa15afe4ba" category="list-text">Migre la PDB.</block>
+  <block id="5d5c422de4bc6968c09f1deac44cb37d" category="summary">El catálogo de automatización de BlueXP  es una colección de soluciones de automatización disponibles para clientes, partners y empleados de NetApp. El catálogo tiene varias características y beneficios.</block>
+  <block id="9272cfe015b625847948709c69c5040d" category="doc">Información general del catálogo de automatización de BlueXP </block>
+  <block id="d617d59413c37e63a18a3c09c36ede0f" category="list-text">Ubicación única para sus necesidades de automatización</block>
+  <block id="082e649c1f4f3693f03821118af0ff91" category="list-text">Puede acceder a a<block ref="d5edd64e969d71f966838509aa534b4a" category="inline-link-rx"></block> través de la interfaz de usuario web de BlueXP . Esto proporciona una ubicación única para los scripts, libros de estrategia y módulos necesarios para mejorar la automatización y el funcionamiento de sus productos y servicios de NetApp.</block>
+  <block id="68e20978991e52265eae03bf6a49ddc8" category="list-text">NetApp crea y prueba las soluciones</block>
+  <block id="e93a6ff860b35d16dc0e24aab5398232" category="list-text">Todas las soluciones de automatización y scripts han sido creadas y probadas por NetApp. Cada solución está dirigida a un caso de uso o solicitud específica de cliente. La mayor prioridad es la integración con los servicios de datos y archivos de NetApp.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentación</block>
+  <block id="8354164813f5d7dbb1a6d0fa641acae8" category="list-text">Cada una de las soluciones de automatización incluye documentación asociada que le ayuda a comenzar. Aunque se accede a las soluciones mediante la interfaz web de BlueXP , toda la documentación está disponible en este sitio. La documentación se organiza según los productos y servicios de cloud de NetApp.</block>
+  <block id="4796a3d87ac5fd77d1747f897268a540" category="list-text">Una base sólida para el futuro</block>
+  <block id="0e7211eaf170083d4747e6ebb46d393d" category="list-text">NetApp se compromete a ayudar a los clientes a mejorar y optimizar la automatización de sus centros de datos y sus entornos de cloud. Esperamos seguir mejorando el catálogo de automatización de BlueXP  para abordar los requisitos de nuestros clientes, los cambios tecnológicos y la integración continua de productos.</block>
+  <block id="9c259c348b17e5bd2a52e94fd361100d" category="list-text">Queremos tener noticias suyas</block>
+  <block id="13aa088e28b9f67de852da1222c36b63" category="list-text">El equipo de automatización de la Oficina de la experiencia del cliente de NetApp (CXO) le gustaría recibir noticias suyas. Si tiene algún comentario, problema o solicitud de características, envíe un correo electrónico a mailto:ng-cxo-automation-admins@NetApp.com[cxo automation team].</block>
+  <block id="9b5b0f64861deda676862e1db6be31e7" category="summary">Este artículo es compatible con la solución de automatización de NetApp Cloud Volumes ONTAP para AWS, que está disponible para los clientes de NetApp en el catálogo de automatización de BlueXP .</block>
+  <block id="59e592a2962656fc69880be2502776b2" category="doc">Cloud Volumes ONTAP para AWS: Estallido a la nube</block>
+  <block id="3a4376afda6ca829660672afe18b6de5" category="paragraph">La solución de automatización de Cloud Volumes ONTAP para AWS automatiza la implementación en contenedores de Cloud Volumes ONTAP para AWS mediante Terraform, lo que le permite implementar Cloud Volumes ONTAP para AWS rápidamente, sin intervención manual.</block>
+  <block id="f13444b5b367d7262a5c5505997cb8d8" category="list-text">Debe descargar la <block ref="9ee8084a1c708ecead6b0f7d8bc48da3" category="inline-link-macro-rx"></block> solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como<block ref="4620783dba91696483c654c28ea6a8d7" prefix=" " category="inline-code"></block>.</block>
+  <block id="2b36326223d2900805c35d98e3d81c1d" category="list-text">Debe instalar una máquina virtual Linux en la misma red que Cloud Volumes ONTAP.</block>
+  <block id="e0d727cf98f7c74530660c9a1e2280ed" category="list-text">Después de instalar la máquina virtual Linux, debe seguir los pasos de esta solución para instalar las dependencias necesarias.</block>
+  <block id="3ee8de22234672e3d0f52ff7c1f3ab55" category="section-title">Paso 1: Instalar Docker y Docker Compose</block>
+  <block id="d2e76c80cf106b0ec7857ece4367a212" category="section-title">Instale Docker</block>
+  <block id="9be9325d47224c1c8ff38631630ab2dd" category="paragraph">Los siguientes pasos usan el software de distribución Linux Ubuntu 20,04 como ejemplo. Los comandos que ejecute dependen del software de distribución de Linux que utilice. Consulte la documentación específica del software de distribución de Linux para conocer la configuración.</block>
+  <block id="92d63d5360c525af100f9f03728b8d3b" category="list-text">Instale Docker ejecutando los siguientes<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block> comandos:</block>
+  <block id="fac4447e0ea2e4cd1a2d9e2fefeab694" category="list-text">Compruebe la instalación:</block>
+  <block id="2104cae55dcb2aec6e7f4612307e4df9" category="list-text">Compruebe que se ha creado un grupo denominado «docker» en su sistema Linux. Si es necesario, cree el grupo:</block>
+  <block id="a0ac620980e52d6ac2715407027f1a9b" category="list-text">Agregue el usuario que necesita acceder a Docker al grupo:</block>
+  <block id="2f63eeb45447284517beb4e4835bc2e5" category="list-text">Los cambios se aplican después de cerrar la sesión y volver a conectarse al terminal. Como alternativa, puede aplicar los cambios inmediatamente:</block>
+  <block id="c583e829d6f0282964cf0ebe5eac92f1" category="section-title">Instale Docker Compose</block>
+  <block id="f26887d95a76ce86ada9f8988641c709" category="list-text">Instale Docker Compose ejecutando los siguientes<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block> comandos:</block>
+  <block id="56e32d166d1a573f9b08792b7a653b51" category="section-title">Paso 2: Preparar la imagen de Docker</block>
+  <block id="620215e6878400cbf70380299405d70b" category="list-text">Copie<block ref="4620783dba91696483c654c28ea6a8d7" prefix=" " category="inline-code"></block> la carpeta en la máquina virtual Linux que desee utilizar para implementar Cloud Volumes ONTAP:</block>
+  <block id="ae8df6b1b959f5f578630ddf635dc6ef" category="list-text"><block ref="043160dcb5097e884764ebf29a002108" prefix="" category="inline-code"></block> es su archivo de clave privada para iniciar sesión sin contraseña.</block>
+  <block id="f6e4822412dd761dcaefe45c5c54664d" category="list-text"><block ref="b59304cdfe1e7489e9baca584471d543" prefix="" category="inline-code"></block> Es el nombre de usuario de la máquina virtual.</block>
+  <block id="af97a8d4ad169030d4b7dd06ca4bc052" category="list-text"><block ref="a2da6c33cb2fe397a0cfd0198f0d1683" prefix="" category="inline-code"></block> Es la dirección IP del equipo virtual.</block>
+  <block id="5a9219ef4f445c453ae0150a51d5359a" category="list-text"><block ref="06e7d55b4dad189a1aeb0337987d68f7" prefix="" category="inline-code"></block> es la ubicación donde se copiará la carpeta.</block>
+  <block id="fa3faa8aaf86229e70832b121911f53f" category="list-text">Extraiga la<block ref="4620783dba91696483c654c28ea6a8d7" prefix=" " category="inline-code"></block> carpeta. Puede extraer la carpeta en el directorio actual o en una ubicación personalizada.</block>
+  <block id="9d688d574c2a101a955ae0ab469efdc8" category="paragraph">Para extraer la carpeta del directorio actual, ejecute:</block>
+  <block id="edec814c365f90f2d412e951bac96c34" category="paragraph">Para extraer la carpeta en una ubicación personalizada, ejecute:</block>
+  <block id="3d56d5579a4ec9144de6420476ee61c6" category="list-text">Después de extraer el contenido, desplácese a la<block ref="98bedd4e117f15dc3fb5920fae07ce4e" prefix=" " category="inline-code"></block> carpeta y ejecute el siguiente comando para ver los archivos:</block>
+  <block id="95b082fe2053875cc65e1206c2522f0e" category="paragraph">Debería ver una lista de archivos, similar al siguiente ejemplo:</block>
+  <block id="b080d722657d815fb2e8d3f2fe8c13f4" category="list-text">Busque el<block ref="c90eb233d0112281bcd19addc4f291bb" prefix=" " category="inline-code"></block> archivo. Esto contiene la imagen de Docker necesaria para poner en marcha Cloud Volumes ONTAP para AWS.</block>
+  <block id="b540e8e4cfa0951a311154d0bc5b99e1" category="list-text">Abra el archivo:</block>
+  <block id="a8b1878bcbe7c30e2af3e0b564089817" category="list-text">Espere unos minutos hasta que se cargue la imagen de Docker y, a continuación, valide que la imagen de Docker se haya cargado correctamente:</block>
+  <block id="0fcdd1e3581872145aa2c2318fda6b15" category="paragraph">Debería ver una imagen de Docker llamada<block ref="619b4acd40b16d36d704fde76818070e" prefix=" " category="inline-code"></block> con la<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block> etiqueta, como se muestra en el siguiente ejemplo:</block>
+  <block id="c026ab6890aa4ccf7465dae5685ece88" category="admonition">Puede cambiar el nombre de la imagen de Docker si es necesario. Si cambia el nombre de la imagen de Docker, asegúrese de actualizar el nombre de la imagen de Docker en los<block ref="a98cc579a6071589bad032a208de89ef" prefix=" " category="inline-code"></block> archivos y.<block ref="d2d2d84cc990f3db67559064ad417683" prefix=" " category="inline-code"></block></block>
+  <block id="f675348a6853d7e9d043d9b423d1bd91" category="section-title">Paso 3: Crear archivos de variables de entorno</block>
+  <block id="4907ab7550daf17451a57fd36a5dd8cf" category="paragraph">En esta etapa, debe crear dos archivos de variables de entorno. Un archivo es para la autenticación de las API de AWS Resource Manager mediante el acceso de AWS y las claves secretas. El segundo archivo es para establecer variables de entorno para permitir que los módulos de BlueXP  Terraform localicen y autentiquen las API de AWS.</block>
+  <block id="d54bca52695c5238346e9ac787ced46c" category="list-text">Cree el<block ref="35200b998d2a57ef482820eb891b56a0" prefix=" " category="inline-code"></block> archivo en la siguiente ubicación:</block>
+  <block id="934107c08fbd7dc9f1eb616900ed8418" category="paragraph"><block ref="4a5dd949b6c97b60d75de1cd59561b2d" prefix="" category="inline-code"></block></block>
+  <block id="8425a09ec87ee927598c653ac9ae2043" category="list-text">Agregue el siguiente contenido al<block ref="35200b998d2a57ef482820eb891b56a0" prefix=" " category="inline-code"></block> archivo:</block>
+  <block id="f2bcaddf6f33b062c708e03ef59cb300" category="paragraph">access_key=&lt;&gt; clave_secreta=&lt;&gt;</block>
+  <block id="323a1d7ec44d6ba6cec116168cdbc7e5" category="paragraph">El formato *debe* ser exactamente como se muestra arriba.</block>
+  <block id="8be04baa85c6b734add3c2badc946b0e" category="list-text">Agregue la ruta de acceso absoluta al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="70f7bdfaeef5fcb9eb5d4a05d8c18cee" category="paragraph">Introduzca la ruta de acceso absoluta para<block ref="35200b998d2a57ef482820eb891b56a0" prefix=" " category="inline-code"></block> el archivo de entorno que corresponda a la<block ref="b27e63237977193bd02ece4d310f350d" prefix=" " category="inline-code"></block> variable de entorno.</block>
+  <block id="7f99175ac18b1317ad7931e86dcc35e8" category="paragraph"><block ref="755289c269fc40ec9437047e656a9e83" prefix="" category="inline-code"></block></block>
+  <block id="e882fb727cd574bcadde7bb79d8406bc" category="list-text">Desplácese a<block ref="f777206e80adeaaf8e95745a5739489c" prefix=" " category="inline-code"></block> la carpeta y actualice el acceso y la clave secreta en el archivo de credenciales.</block>
+  <block id="6720498ae50a74125359d84cb07d385e" category="paragraph">Agregue el siguiente contenido al archivo:</block>
+  <block id="8e6f72878836f39ae9cec5a1e294987a" category="paragraph">aws_access_key_id=&lt;&gt; aws_secret_access_key=&lt;&gt;</block>
+  <block id="2f7ee2b0af179a53111a1b10a77a562b" category="section-title">Paso 4: Agregue licencias de Cloud Volumes ONTAP a BlueXP  o suscríbase a BlueXP </block>
+  <block id="b0f2ae2e05e85f6d2485f41668ea391b" category="paragraph">Puede añadir licencias de Cloud Volumes ONTAP a BlueXP  o suscribirse a NetApp BlueXP  en AWS Marketplace.</block>
+  <block id="fe96b8625addca1fd2cb84fe5b784b8e" category="list-text">Desde el portal de AWS, navegue hasta *SaaS* y seleccione *Suscribirse a NetApp BlueXP *.</block>
+  <block id="c72688c6e14b02d2351f47bd22bfb8d1" category="paragraph">Puede usar el mismo grupo de recursos que Cloud Volumes ONTAP o uno diferente.</block>
+  <block id="ced15717d3b4438763f2e2c261ca15be" category="list-text">Configure el portal de BlueXP  para importar la suscripción de SaaS a BlueXP .</block>
+  <block id="653620d293f08d43eeba7acae0a05434" category="paragraph">Puede configurarlo directamente desde el portal de AWS.</block>
+  <block id="a7274810106d6a3a365d0e8abe67167e" category="paragraph">Se le redirigirá al portal de BlueXP  para confirmar la configuración.</block>
+  <block id="f1d809d4ddadd0b980b4911f8b280f8e" category="list-text">Confirme la configuración en el portal de BlueXP  seleccionando *Guardar*.</block>
+  <block id="9eaade7d660bb23f4e0fd7b0f2feb5f0" category="paragraph">Debe crear un volumen externo para mantener los archivos de estado de Terraform y otros archivos importantes persistentes. Debe asegurarse de que los archivos están disponibles para Terraform para ejecutar el flujo de trabajo y las implementaciones.</block>
+  <block id="607c398d5c3d2cd43ca039ef926c8047" category="list-text">Cree un volumen externo fuera de Docker Compose:</block>
+  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">Ejemplo:</block>
+  <block id="56f167805228446310e6c9007d3b1985" category="list-text">Utilice una de las siguientes opciones:</block>
+  <block id="f83454c1fa0f8d7507dc008dc02233b0" category="list-text">Añada una ruta de volumen externo al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo de entorno.</block>
+  <block id="b4c7dc0f63e2f70d7cc94b0be4a22191" category="paragraph">Debe seguir el formato exacto que se muestra a continuación.</block>
+  <block id="fb2ea703b13d059f6b7ea5da806021df" category="paragraph">Formato:</block>
+  <block id="710986866db54f7b377602bd5263c6f5" category="paragraph"><block ref="004a60502bb089fdaf4c0527e8578a85" prefix="" category="inline-code"></block></block>
+  <block id="9f196f19f0a31d3bce14c0205ec28b5c" category="paragraph">Ejemplo:<block ref="1130be47ecb819bc4329770155d4535d" prefix=" " category="inline-code"></block></block>
+  <block id="0ebf85d762d08c6126a6f4fb5b389ee2" category="list-text">Añada recursos compartidos NFS como volumen externo.</block>
+  <block id="b6b2ff9aeb0d309ad68031cb8b3890ec" category="paragraph">Asegúrese de que el contenedor de Docker se pueda comunicar con los recursos compartidos NFS y de que los permisos correctos, como lectura/escritura, están configurados.</block>
+  <block id="283d9532825369999cb3fabacaa592ac" category="list-text">Agregue la ruta de acceso de recursos compartidos NFS como la ruta al volumen externo en el archivo Docker Compose, como se muestra a continuación: Formato:</block>
+  <block id="a194f6cf4dc27de5c5d3ed4b36cc309b" category="paragraph"><block ref="5590b61ca75eef1620ccfcead35f67fd" prefix="" category="inline-code"></block></block>
+  <block id="15062eb2e1e77d15ed0d106ac8c530b8" category="paragraph">Ejemplo:<block ref="3877c15de52f32ab91ceeebe615e1ee1" prefix=" " category="inline-code"></block></block>
+  <block id="1a0aecc124b681c5351c79472ef6a6db" category="list-text">Navegue a la<block ref="3e39fe4d28b9a9d5f18f41a55b0725b8" prefix=" " category="inline-code"></block> carpeta.</block>
+  <block id="3d2e4eeeb956bf6b45ec5ac878efb9e4" category="paragraph">Debe ver el siguiente archivo de variables en la carpeta:</block>
+  <block id="e5d545d828a9bcec1ba13e77aea61d15" category="list-text"><block ref="b5f9e43085599050738084372b6e118c" prefix="" category="inline-code"></block></block>
+  <block id="935f43837ab5913b0b20d03f1f629cdd" category="list-text"><block ref="c9ac8098c5ea9d3e6a9a596ff0c512a4" prefix="" category="inline-code"></block></block>
+  <block id="b10b322b96b589c3402bc7ad0bfba4cc" category="list-text">Cambie los valores dentro del<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo de acuerdo con sus requisitos.</block>
+  <block id="e789fee7876fa83156d8c98bbeb6f127" category="paragraph">Debe leer la documentación de soporte específica cuando modifique cualquiera de los valores de variables del<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo. Los valores pueden variar según la región, las zonas de disponibilidad y otros factores compatibles con Cloud Volumes ONTAP para AWS. Esto incluye licencias, tamaño de disco y tamaño de máquina virtual para nodos individuales y pares de alta disponibilidad.</block>
+  <block id="3fb2c016fa49bac3303eaec34d954144" category="paragraph">Todas las variables de soporte para los módulos Conector y Cloud Volumes ONTAP Terraform ya están definidas en el<block ref="c9ac8098c5ea9d3e6a9a596ff0c512a4" prefix=" " category="inline-code"></block> archivo. Debe hacer referencia a los nombres de variables en el<block ref="c9ac8098c5ea9d3e6a9a596ff0c512a4" prefix=" " category="inline-code"></block> archivo antes de agregarlos al<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="24fd5011eb6086c915eb6eb7c052f464" category="list-text">En función de sus requisitos, puede activar o desactivar FlexCache and FlexClone configurando las siguientes opciones en<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> o<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>.</block>
+  <block id="2d26bda51ed6b6c1343dbc83898511fa" category="paragraph">Los siguientes ejemplos habilitan FlexCache y FlexClone:</block>
+  <block id="a791d26e95a7543066f1215411f3e198" category="list-text"><block ref="7e64a2b0f580e2bb0e4092b9050c80a9" prefix="" category="inline-code"></block></block>
+  <block id="c66439a27001afb24f86dff64260d8d0" category="list-text"><block ref="195dd3fbf043d3bc4aa64f2903faafee" prefix="" category="inline-code"></block></block>
+  <block id="b1597526f2f04f45698bd283e02de400" category="section-title">Paso 6: Ponga en marcha Cloud Volumes ONTAP para AWS</block>
+  <block id="22c78f7ad6534907b06b548e72b969fe" category="paragraph">Utilice los siguientes pasos para poner en marcha Cloud Volumes ONTAP para AWS.</block>
+  <block id="c513ca9a4cfd1f47bd8e3d1b65087c31" category="list-text">Desde la carpeta raíz, ejecute el siguiente comando para activar el despliegue:</block>
+  <block id="c94af3947355a642fb4b9e791480720a" category="paragraph">Se activan dos contenedores, el primer contenedor pone en marcha Cloud Volumes ONTAP y el segundo contenedor envía datos de telemetría a AutoSupport.</block>
+  <block id="c09207e2e34e277460feaad7c4e413af" category="paragraph">El segundo contenedor espera hasta que el primer contenedor complete todos los pasos correctamente.</block>
+  <block id="a2a17553aa79d33c592684bb3dd2241e" category="list-text">Supervise el progreso del proceso de despliegue mediante los archivos log:</block>
+  <block id="c1f3663c97424660481f9cae6260cf7e" category="paragraph">Este comando proporciona resultados en tiempo real y captura los datos en los siguientes archivos de registro:<block ref="ecb0093a5689314955e28495cd621753" prefix=" " category="inline-code"></block></block>
+  <block id="ae5f791e4facf4db8c45b04ff8181a54" category="paragraph"><block ref="cb5c149e6dfd332df9c42d156d8a5bf5" prefix="" category="inline-code"></block></block>
+  <block id="28b17baad4ccba3513402ae974cb8738" category="paragraph">Puede cambiar el nombre de estos archivos de registro editando<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> el archivo mediante las siguientes variables de entorno:</block>
+  <block id="f0909a52755a160376099af766cbc78f" category="paragraph"><block ref="c5d1ae1057f05d40dd703a96c9da0064" prefix="" category="inline-code"></block></block>
+  <block id="3a04a6b4a8114b8076067c561a9c8634" category="paragraph"><block ref="354b0bf931af3ddcd894dc9861772396" prefix="" category="inline-code"></block></block>
+  <block id="77eccf81051f9619dd6c383e8451ecf1" category="paragraph">Los siguientes ejemplos muestran cómo cambiar los nombres de los archivos log:</block>
+  <block id="868d687be11f55726cb393815c0a97c8" category="paragraph"><block ref="9907078c7a7a5c629ebb236fd72acf2f" prefix="" category="inline-code"></block></block>
+  <block id="ca9b614d838e6ab43f124220eb65ecfa" category="paragraph"><block ref="69e253393eb5a75cee01dc64f5ccc88a" prefix="" category="inline-code"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Después de terminar</block>
+  <block id="5f06879ec306c41acfb5daf594cdc322" category="paragraph">Puede utilizar los siguientes pasos para eliminar el entorno temporal y limpiar los elementos creados durante el proceso de despliegue.</block>
+  <block id="13e00a7326a02dda84a8199ff8522864" category="list-text">Si implementó FlexCache, configure la siguiente opción en<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> el archivo de variables, esto limpia los volúmenes de FlexCache y elimina el entorno temporal que se creó anteriormente.</block>
+  <block id="b0daaef681d22c99b9fb1e612a06a5a2" category="paragraph"><block ref="4baa594e2e77791216456fc2967e9123" prefix="" category="inline-code"></block></block>
+  <block id="d8d6e66d1218d547fb6fcd15ca9f03cc" category="admonition">Las opciones posibles son <block ref="078f40fa23e0672777adc7c05d4773dd" prefix=" " category="inline-code"></block> y.<block ref="fb14982288108e1fbd6207ef55f05027" prefix=" " category="inline-code"></block></block>
+  <block id="bb971a7068423c360afae4dd7661af1a" category="list-text">Si implementó FlexClone, configure la siguiente opción en<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> el archivo de variables, esto limpia los volúmenes de FlexClone y elimina el entorno temporal que se creó anteriormente.</block>
+  <block id="17e54c96da836af03569986516f16bc7" category="paragraph"><block ref="a9d885708597a6229170ec5778eeff7a" prefix="" category="inline-code"></block></block>
+  <block id="085443c446415c0e8dfae8cfb8269629" category="admonition">Las opciones posibles son<block ref="078f40fa23e0672777adc7c05d4773dd" prefix=" " category="inline-code"></block> y.<block ref="fb14982288108e1fbd6207ef55f05027" prefix=" " category="inline-code"></block></block>
+  <block id="7d2c3c1ed5c6e6f809462f6397b24660" category="summary">Puedes usar esta solución de automatización para implementar Cloud Volumes ONTAP para Azure usando Terraform.</block>
+  <block id="e19943d1705ed16e36fb5b3a85dc2035" category="doc">Cloud Volumes ONTAP para Azure: Ráfagas en la nube</block>
+  <block id="d4a0a8a5bbbee6db1cb9e06e8904ad42" category="paragraph">Este artículo es compatible con la solución de automatización de NetApp Cloud Volumes ONTAP para Azure, que está disponible para los clientes de NetApp en el catálogo de automatización de BlueXP .</block>
+  <block id="fdf1da7025a12245364e391cff8fa55e" category="paragraph">La solución de automatización de Cloud Volumes ONTAP para Azure automatiza la implementación en contenedores de Cloud Volumes ONTAP para Azure mediante Terraform, lo que le permite implementar Cloud Volumes ONTAP para Azure rápidamente, sin ninguna intervención manual.</block>
+  <block id="89f227d5fe904ef7a372dd0831cba23b" category="list-text">Debe descargar la <block ref="1ddb5ccfb0409f4b4310a1f2918594e3" category="inline-link-macro-rx"></block> solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como<block ref="c885be86fb876836f2cffef8e6f892c3" prefix=" " category="inline-code"></block>.</block>
+  <block id="c12e9e6aa9653bb2925f672aad5e2142" category="list-text">Copie<block ref="c885be86fb876836f2cffef8e6f892c3" prefix=" " category="inline-code"></block> la carpeta en la máquina virtual Linux que desee utilizar para implementar Cloud Volumes ONTAP:</block>
+  <block id="f6e6730d6997c7cec992891e4a1c8b0b" category="list-text"><block ref="5ff4fe5cb694d92583d391dd8529066d" prefix="" category="inline-code"></block> Es el nombre de usuario de la máquina virtual.</block>
+  <block id="e058c807e926d385e8f2c37c714fbfe0" category="list-text">Extraiga la<block ref="c885be86fb876836f2cffef8e6f892c3" prefix=" " category="inline-code"></block> carpeta. Puede extraer la carpeta en el directorio actual o en una ubicación personalizada.</block>
+  <block id="c7f1addae83f60eb21267becf5dea1e0" category="list-text">Después de extraer el contenido, desplácese a la<block ref="ea9df13e32359398d19d4196dfaf92a7" prefix=" " category="inline-code"></block> carpeta y ejecute el siguiente comando para ver los archivos:</block>
+  <block id="b168f70e88cb4f49d4b3e0c7b1cd1dfa" category="list-text">Busque el<block ref="a41388e75db0a56d2acb456bd9d6e37b" prefix=" " category="inline-code"></block> archivo. Esto contiene la imagen de Docker necesaria para poner en marcha Cloud Volumes ONTAP para Azure.</block>
+  <block id="67d5e2ebef240ecc2ef42d0946157f14" category="paragraph">Debería ver una imagen de Docker llamada<block ref="acf69c5b79bd41b1503b1d20a026c60b" prefix=" " category="inline-code"></block> con la<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block> etiqueta, como se muestra en el siguiente ejemplo:</block>
+  <block id="dd5960e7bffd99f7ee3b51e73670f175" category="paragraph">En esta etapa, debe crear dos archivos de variables de entorno. Un archivo es para la autenticación de las API de Azure Resource Manager con credenciales de principal de servicio. El segundo archivo es para establecer variables de entorno para permitir que los módulos de BlueXP  Terraform localicen y autentiquen las API de Azure.</block>
+  <block id="4756c84ef3e46051e4d56ea0c6ae3e9d" category="list-text">Cree un principal de servicio.</block>
+  <block id="8574e8cb83343bdec6f5b86d21bfa16b" category="inline-link-macro">Cree una aplicación de Azure Active Directory y un director de servicio que pueda acceder a los recursos</block>
+  <block id="7d8b48ff4c2780be6cb609cf1ea71bdb" category="paragraph">Antes de crear los archivos de variables de entorno, debe crear un principal de servicio siguiendo los pasos de <block ref="69db1b890a0765a504939c4d0eae8a36" category="inline-link-macro-rx"></block>.</block>
+  <block id="af05d31ac013467a159a9675f1494b0b" category="list-text">Asigne el rol *Contributor* al principal de servicio recién creado.</block>
+  <block id="da08fbf09f81c35447b021d5ba6570ba" category="list-text">Crear un rol personalizado.</block>
+  <block id="7e2883875f0c47ed1504c2ff73a0959e" category="list-text">Localice el<block ref="613825aa03710312ab9dcfb50d31f1d1" prefix=" " category="inline-code"></block> archivo y compruebe los permisos necesarios en las acciones enumeradas.</block>
+  <block id="30232e5cb1f7bdb808692b97dcaa9af4" category="list-text">Inserte estos permisos y adjunte el rol personalizado al principal de servicio recién creado.</block>
+  <block id="44d682af238a9d605432564393f8ff8e" category="list-text">Vaya a *Certificados y secretos* y seleccione *Nuevo secreto de cliente* para crear el secreto de cliente.</block>
+  <block id="5149ee9771679036352bbe83445f0235" category="paragraph">Cuando creas el secreto del cliente, debes registrar los detalles de la columna *VALOR* porque no podrás ver este valor de nuevo. También debe registrar la siguiente información:</block>
+  <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">ID del cliente</block>
+  <block id="9bf79c7f10eadd0b612b8c354ad19bdc" category="list-text">ID de suscripción</block>
+  <block id="7131a7a6bfe81200d21d5a33c64847b6" category="list-text">ID de inquilino</block>
+  <block id="938983f3b962b074da554ec2dde5dc4c" category="paragraph">Necesitará esta información para crear las variables de entorno. Puede encontrar la información de ID de cliente e ID de inquilino en la sección *Overview* de la interfaz de usuario principal de servicio.</block>
+  <block id="b12b8124ed6df0323d47c3a8e0fb8339" category="list-text">Cree los archivos de entorno.</block>
+  <block id="6f02aa9f8a6bd1269a82b1423fd7658a" category="list-text">Cree el<block ref="f347f541acdc7ffe7aaf353710c4c199" prefix=" " category="inline-code"></block> archivo en la siguiente ubicación:</block>
+  <block id="c4b5e80f860790aa55733068a12557ca" category="paragraph"><block ref="6e707472edcb0598212b3be3cdad0ee6" prefix="" category="inline-code"></block></block>
+  <block id="f30fa1ee45dcce1d838fe347ed74ec39" category="paragraph">ClientID=&lt;&gt; clientSecret=&lt;&gt; SubscriptionId=&lt;&gt; tenantId=&lt;&gt;</block>
+  <block id="ff2192fff6c8f023b72b92365182e240" category="paragraph">El formato *debe* ser exactamente como se muestra arriba sin ningún espacio entre la clave y el valor.</block>
+  <block id="e651887622096ee821bc34500ce4ad14" category="list-text">Cree el<block ref="b47b245422281b94869272778023ebcc" prefix=" " category="inline-code"></block> archivo en la siguiente ubicación:</block>
+  <block id="d71ec0efcebd789bf788d8f4dd90c040" category="paragraph"><block ref="f1a6c8be075fc5d9e32025751ca4b563" prefix="" category="inline-code"></block></block>
+  <block id="dd878b546de6a3f87957f8884a3158a0" category="paragraph">AZURE_TENANT_ID=&lt;&gt; AZURE_CLIENT_SECRET=&lt;&gt; AZURE_CLIENT_ID=&lt;&gt; AZURE_SUBSCRIPTION_ID=&lt;&gt;</block>
+  <block id="48df25e7372f846cd5fb45e094660427" category="list-text">Agregue las rutas de acceso absolutas al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="d5d4d66c8949c6e52027657a419ca18c" category="paragraph">Introduzca la ruta de acceso absoluta para<block ref="f347f541acdc7ffe7aaf353710c4c199" prefix=" " category="inline-code"></block> el archivo de entorno en el<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo que corresponda a la<block ref="a14dcc47dd67f15632978bb5b816e4c3" prefix=" " category="inline-code"></block> variable de entorno.</block>
+  <block id="ab12a0661762f3df9609da95580f5a25" category="paragraph"><block ref="da98aafd0446564054a74c778efdf4f0" prefix="" category="inline-code"></block></block>
+  <block id="65d5aaba759b969ac07758fa93ef2981" category="paragraph">Introduzca la ruta de acceso absoluta para<block ref="b47b245422281b94869272778023ebcc" prefix=" " category="inline-code"></block> el archivo de entorno en el<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo que corresponda a la<block ref="d9b0717a1f49333f5743f1c418f98a3e" prefix=" " category="inline-code"></block> variable de entorno.</block>
+  <block id="9551c07194db5add04408dcf9d4d7acf" category="paragraph"><block ref="585a7d6034855fee518db0083c875b49" prefix="" category="inline-code"></block></block>
+  <block id="115358289763fb9761317344e7b77a55" category="paragraph">Puede añadir licencias de Cloud Volumes ONTAP a BlueXP  o suscribirse a NetApp BlueXP  en Azure Marketplace.</block>
+  <block id="fc774a6f9a9bc37c66bbb04cf70cada4" category="list-text">Desde el portal de Azure, navegue hasta *SaaS* y seleccione *Suscribirse a NetApp BlueXP *.</block>
+  <block id="dd7b8a7974111efbd549e4f54fc12e86" category="list-text">Seleccione el plan *Cloud Manager (por Cap PYGO por hora, WORM y servicios de datos)*.</block>
+  <block id="5324339ba454f54b4d1c29a1bda97112" category="paragraph">Puede configurarlo directamente desde el portal de Azure navegando a *Detalles del producto y del plan* y seleccionando la opción *Configurar cuenta ahora*.</block>
+  <block id="529559656bf7d5fc6d731f97dc3d9a18" category="paragraph">A continuación, se le redirigirá al portal de BlueXP  para confirmar la configuración.</block>
+  <block id="e6b1c26c73bcc445d9d2465d871ca623" category="paragraph"><block ref="02d1c3229f8cf2b68ce516c14597799f" prefix="" category="inline-code"></block></block>
+  <block id="3a27ce66bcd99829ec680c851e363a1e" category="paragraph">Ejemplo:<block ref="f509563c40c925834f580e9269bb578f" prefix=" " category="inline-code"></block></block>
+  <block id="778c150d6dcb342c842f259bbbf4f078" category="paragraph"><block ref="78501e0409eec1c72d9cb57cf0fff414" prefix="" category="inline-code"></block></block>
+  <block id="3915199b6b9a0194835e4413ceca8cc9" category="paragraph">Ejemplo:<block ref="23648d2651cf111587274985465b55fe" prefix=" " category="inline-code"></block></block>
+  <block id="c3ae6759e23ff9739c1af48f35676490" category="list-text">Navegue a la<block ref="45d65aaed11c172efc09beb2e1827680" prefix=" " category="inline-code"></block> carpeta.</block>
+  <block id="34c56ba854dc3d1f69e37339e3597af5" category="paragraph">Debe ver los siguientes archivos de variables en la carpeta:</block>
+  <block id="bfe1388c9443f9e2a9584cacf3d38906" category="paragraph">Debe leer la documentación de soporte específica cuando modifique cualquiera de los valores de variables del<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo. Los valores pueden variar según la región, las zonas de disponibilidad y otros factores compatibles con Cloud Volumes ONTAP para Azure. Esto incluye licencias, tamaño de disco y tamaño de máquina virtual para nodos individuales y pares de alta disponibilidad.</block>
+  <block id="b81d0a8d18ff32d90c40581c2819c188" category="list-text">Si es necesario, puede recuperar el valor de la variable Terraform<block ref="d90d0c92bf7acb88d3f2d2e040d442a1" prefix=" " category="inline-code"></block> desde Azure Active Directory Service:</block>
+  <block id="3e3956907baaa7e42e65969a2549cd84" category="list-text">Vaya a *Enterprise Applications –&gt; All Applications* y seleccione el nombre del Service Principal que creó anteriormente.</block>
+  <block id="c91b4f0af93277281d14aded719f5cc1" category="list-text">Copie el ID del objeto e inserte el valor para la variable Terraform:</block>
+  <block id="0ed54365d80c6cc6dd17763db8d74323" category="paragraph"><block ref="d90d0c92bf7acb88d3f2d2e040d442a1" prefix="" category="inline-code"></block></block>
+  <block id="75798b57349f1941756a680ee07a72fd" category="section-title">Paso 6: Implemente Cloud Volumes ONTAP para Azure</block>
+  <block id="a4c9ae864671c6db26a1b413d423c55d" category="paragraph">Utilice los siguientes pasos para implementar Cloud Volumes ONTAP para Azure.</block>
+  <block id="0e2bce33ef45726871a6e8e79943e6e1" category="paragraph">Este comando proporciona resultados en tiempo real y captura los datos en los siguientes archivos de registro:</block>
+  <block id="98771aa4049dca5569244940caa12490" category="paragraph"><block ref="ecb0093a5689314955e28495cd621753" prefix="" category="inline-code"></block></block>
+  <block id="6741f7abf3aa6ef11e28ab2fc48d8716" category="list-text">Si implementó FlexCache, configure la siguiente opción en<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> el archivo, esto limpia los volúmenes de FlexCache y elimina el entorno temporal creado anteriormente.</block>
+  <block id="7ef493ae542ac9076ff2121ad70e93d1" category="list-text">Si implementó FlexClone, configure la siguiente opción en<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> el archivo, esto limpia los volúmenes de FlexClone y elimina el entorno temporal creado anteriormente.</block>
+  <block id="92e012e30683743460baae2798b7454e" category="summary">Este artículo es compatible con la solución de automatización de cloud de NetApp Cloud Volumes ONTAP para Google, que está disponible para los clientes de NetApp en el catálogo de automatización de BlueXP .</block>
+  <block id="70d149d22386474d99caac533c68bb2c" category="paragraph">La solución de automatización de Cloud Volumes ONTAP para Google Cloud automatiza la puesta en marcha en contenedores de Cloud Volumes ONTAP para Google Cloud, lo que le permite poner en marcha Cloud Volumes ONTAP para Google Cloud rápidamente sin intervención manual.</block>
+  <block id="fb5a19b47f5459e975e6cc6ffbd55fcf" category="list-text">Debe descargar la <block ref="5bfe4bd3ce07304807e21420ac8726c8" category="inline-link-macro-rx"></block> solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como<block ref="3122a7091302712dc5048f11784a1882" prefix=" " category="inline-code"></block>.</block>
+  <block id="c1d4ac611e9e2f13ac71771c15839512" category="list-text">Instale Docker ejecutando los siguientes comandos:</block>
+  <block id="2620ba84e9ee2d605267499de9ec8744" category="list-text">Copie<block ref="3122a7091302712dc5048f11784a1882" prefix=" " category="inline-code"></block> la carpeta en la máquina virtual Linux que desee utilizar para implementar Cloud Volumes ONTAP:</block>
+  <block id="e047207feed5047a9ff3f134f8ae8321" category="list-text"><block ref="375fec901ac1e8809111e0226ae2a5c4" prefix="" category="inline-code"></block> Es el nombre de usuario de la máquina virtual.</block>
+  <block id="681c4ae20b42bf3728670d4a787eb84e" category="list-text">Extraiga la<block ref="3122a7091302712dc5048f11784a1882" prefix=" " category="inline-code"></block> carpeta. Puede extraer la carpeta en el directorio actual o en una ubicación personalizada.</block>
+  <block id="4f45e1e98187e625cd06bdf1ffcde462" category="list-text">Después de extraer el contenido, ejecute el siguiente comando para ver los archivos:</block>
+  <block id="466c902cf97ef9a5ab8173d37ce3d506" category="list-text">Busque el<block ref="38a8a3d51d0b479771f0513bd2b7ed6d" prefix=" " category="inline-code"></block> archivo. Esto contiene la imagen de Docker necesaria para poner en marcha Cloud Volumes ONTAP para Google Cloud.</block>
+  <block id="b9152045b1db31914d123f1f9c1a399d" category="paragraph">Debería ver una imagen de Docker llamada<block ref="8236710f6b62c27a24080753638685cb" prefix=" " category="inline-code"></block> con la<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block> etiqueta, como se muestra en el siguiente ejemplo:</block>
+  <block id="f9a153283596e6c7e8753cacd765f1fc" category="section-title">Paso 3: Actualice el archivo JSON</block>
+  <block id="42ce67a66fde45352e3db41a1a57d54b" category="paragraph">En esta etapa, debe actualizar<block ref="af92bf6bf5f4928b321d7738a6068dd1" prefix=" " category="inline-code"></block> el archivo con una clave de cuenta de servicio para autenticar al proveedor de Google Cloud.</block>
+  <block id="b1f47b1cf9db709b4fec668b6c9f071c" category="inline-link-macro">Obtenga más información sobre la creación de cuentas de servicio.</block>
+  <block id="89cda20d6e97cfeb4f5d372a42e68a56" category="list-text">Cree una cuenta de servicio con permisos para implementar Cloud Volumes ONTAP y el conector BlueXP . <block ref="c2b6aba427b8cb58071597c60cc5709a" category="inline-link-macro-rx"></block></block>
+  <block id="fbcb4d651023bd547106a64a43f3c29b" category="list-text">Descargue el archivo de claves de la cuenta y actualice<block ref="af92bf6bf5f4928b321d7738a6068dd1" prefix=" " category="inline-code"></block> el archivo con la información del archivo de claves. <block ref="af92bf6bf5f4928b321d7738a6068dd1" prefix=" " category="inline-code"></block>El archivo se encuentra en<block ref="f377976945af1ad2c6e2801d01115448" prefix=" " category="inline-code"></block> la carpeta.</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="listing-title">Ejemplo</block>
+  <block id="81904f89da8f471c6d21a35183df68b0" category="paragraph">El formato de archivo debe ser exactamente como se muestra anteriormente.</block>
+  <block id="065049e1e2c0df20f3148f5d46462d11" category="section-title">Paso 4: Suscribirse a BlueXP </block>
+  <block id="ffcc69297f0e07a9e942b6631079ad1b" category="paragraph">Puede suscribirse a NetApp BlueXP  en Google Cloud Marketplace.</block>
+  <block id="b6c8b93a52d1fa156e7be803518b8c9a" category="inline-link-macro">Consola de Google Cloud</block>
+  <block id="5f2574b27d98802030b4c26a3135e1b7" category="list-text">Navegue hasta <block ref="9e380fd6b80c64d2f38ea11babc2a93b" category="inline-link-macro-rx"></block>y seleccione *Suscribirse a NetApp BlueXP *.</block>
+  <block id="26514414412b5fd8cd03fe7fe2e9adf6" category="paragraph">Puedes configurarlo directamente desde Google Cloud Platform. Se le redirigirá al portal de BlueXP  para confirmar la configuración.</block>
+  <block id="f691281f53b81c9f5d73a97dc7c334fd" category="inline-link-macro">Administrar las credenciales y suscripciones de Google Cloud para BlueXP</block>
+  <block id="9b64915299dcdbacf95e82a84ddd599c" category="paragraph">Para obtener más información, consulte <block ref="671ef92e8206128f563d24d2bbbcdfc6" category="inline-link-macro-rx"></block>.</block>
+  <block id="d601067f56f2e95e5bf3179dcc7e13f9" category="section-title">Paso 5: Habilita las API de Google Cloud necesarias</block>
+  <block id="ff14c8d55e1e81c87ceda218290d4821" category="paragraph">Debes habilitar las siguientes API de Google Cloud en tu proyecto para implementar Cloud Volumes ONTAP y Connector.</block>
+  <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">API de Cloud Deployment Manager V2</block>
+  <block id="1439ef482dee1b1e4b2daac93de36c44" category="list-text">API de registro en la nube</block>
+  <block id="9e636409b20980fb5089c87705851b4d" category="list-text">API de Cloud Resource Manager</block>
+  <block id="1101b09020ade12e90a562489e315c8d" category="list-text">API del motor de computación</block>
+  <block id="71660685d00034957db3f9a31c160978" category="list-text">API de gestión de acceso e identidad (IAM)</block>
+  <block id="c4a2f53e2e855fe1a931c14e79ff748f" category="inline-link-macro">Obtenga más información sobre cómo habilitar las API</block>
+  <block id="9a4933dab62c28def309db02f8334811" category="paragraph"><block ref="9a4933dab62c28def309db02f8334811" category="inline-link-macro-rx"></block></block>
+  <block id="5c7a8eac17283ba8c069e778aa4a2353" category="section-title">Paso 6: Cree un volumen externo</block>
+  <block id="ec41e24cd982172090f6487971825486" category="paragraph">Debe crear un volumen externo para mantener los archivos de estado de Terraform y otros archivos importantes persistentes. Debe asegurarse de que los archivos están disponibles para Terraform para ejecutar el flujo de trabajo y las implementaciones.</block>
+  <block id="523c9460d099acb848d91f07f3d24754" category="paragraph"><block ref="23ef7fcdbc191ce4ed60a464dae052aa" prefix="" category="inline-code"></block></block>
+  <block id="cb619db2ca2bdbda88b47be68b437af9" category="paragraph">Ejemplo:<block ref="b78d0db204b814e3205132ba8471f78e" prefix=" " category="inline-code"></block></block>
+  <block id="86a625a2eed126582e80b8c0423622a5" category="paragraph"><block ref="00d628aa5c57c6446f45d49cac66e210" prefix="" category="inline-code"></block></block>
+  <block id="aa2402dda06933a599b24c463de8fc2e" category="paragraph">Ejemplo:<block ref="f81460ac35b80a183d9ac2432c366f0f" prefix=" " category="inline-code"></block></block>
+  <block id="b002c5630e4c947461f3d458820e8e5e" category="list-text">Navegue a la<block ref="f377976945af1ad2c6e2801d01115448" prefix=" " category="inline-code"></block> carpeta.</block>
+  <block id="6c3d77c0ba95eace73701b123d7d9be6" category="paragraph">Debe ver los siguientes archivos en la carpeta:</block>
+  <block id="7373b50406798190e26a2e832c7ad6f4" category="paragraph">Debe leer la documentación de soporte específica cuando modifique cualquiera de los valores de variables del<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo. Los valores pueden variar en función de la región, las zonas de disponibilidad y otros factores compatibles con Cloud Volumes ONTAP para Google Cloud. Esto incluye licencias, tamaño de disco y tamaño de máquina virtual para nodos individuales y pares de alta disponibilidad.</block>
+  <block id="2fb90271c759d19e087baa9b216a5221" category="section-title">Paso 7: Implementa Cloud Volumes ONTAP para Google Cloud</block>
+  <block id="78987e3939dc92928d12fd92823e2a80" category="paragraph">Siga estos pasos para implementar Cloud Volumes ONTAP para Google Cloud.</block>
+  <block id="2180e03803676ed25b3cac70a6100443" category="summary">Esta solución de automatización se puede usar para aprovisionar Amazon FSx para NetApp ONTAP con volúmenes y una FlexCache asociada.</block>
+  <block id="4a56403c32c948e8f251c29bddd22609" category="admonition">Amazon FSx para NetApp ONTAP también se conoce como *FSX para ONTAP*.</block>
+  <block id="f031372e35714d1e925dfc1451a4dbee" category="list-text">Aprovisionar un sistema de archivos FSx para ONTAP de destino</block>
+  <block id="54da27626cf7b1185f954edeb0f8aee9" category="list-text">Aprovisione las máquinas virtuales de almacenamiento (SVM) para el sistema de archivos</block>
+  <block id="e8f2e9290ff73ca9340d8c33cd025ef2" category="list-text">Cree una relación de paridad de clústeres entre los sistemas de origen y destino</block>
+  <block id="a9fd96236b32a7953a7257de1b7acfa5" category="list-text">Cree una relación entre iguales de SVM entre el sistema de origen y el de destino para FlexCache</block>
+  <block id="e10694b23ab3a6cda3acf14535694230" category="list-text">Opcionalmente, crea volúmenes de FlexVol mediante FSx para ONTAP</block>
+  <block id="30a0e039abe0e6915900958cfc9a66ac" category="list-text">Crea un volumen de FlexCache en FSx para ONTAP con el origen que apunta al almacenamiento on-premises</block>
+  <block id="6ea161ba14b946634c32e79f22a5283a" category="paragraph">La automatización se basa en Docker y Docker Compose que deben instalarse en la máquina virtual Linux como se describe a continuación.</block>
+  <block id="09275d882e41e4724e4e23aa722475d2" category="paragraph">Debe tener lo siguiente para completar el aprovisionamiento y la configuración:</block>
+  <block id="62262322522d94d533310fe97363ebca" category="list-text">Debe descargar<block ref="008001527290ebd3bc25df4cac35bcaf" category="inline-link-rx"></block> la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como archivo<block ref="e2e5a273eb632b27931109b94363bfa4" prefix=" " category="inline-code"></block>.</block>
+  <block id="7d0450eaaf9623244d38bd6d4628c3f7" category="list-text">Conectividad de red entre los sistemas de origen y destino.</block>
+  <block id="9e21305b31d9f067e02bcff89baf7413" category="list-text">Distribución de Linux basada en Debian</block>
+  <block id="2ce89591e385788ef7048bb31059c087" category="list-text">Puesto en marcha en el mismo subconjunto de VPC utilizado para el aprovisionamiento de FSx para ONTAP</block>
+  <block id="b9de3fae9c5a76a62363013a9788ca02" category="list-text">Cuenta de AWS.</block>
+  <block id="d8750f31afc325726074aab0a9895b0b" category="paragraph">Instalar y configurar Docker en una máquina virtual Linux basada en Debian.</block>
+  <block id="a685a0e8f5d9e33244117ebbb1597f65" category="list-text">Preparar el entorno.</block>
+  <block id="1e55e69d806f234dd3bb4e97d2b1014d" category="list-text">Instale Docker y verifique la instalación.</block>
+  <block id="161b6b633ce732d5453fce927318e4de" category="section-title">Paso 2: Instale Docker Compose</block>
+  <block id="87a139cb423c279d0e83a45db55695f0" category="paragraph">Instale Docker Compose en una máquina virtual Linux basada en Debian.</block>
+  <block id="fc97618a162a28f8a16700252994245d" category="list-text">Instale Docker Compose.</block>
+  <block id="1066a778d893ab2a450bad93e96ff7f6" category="list-text">Compruebe que la instalación se ha realizado correctamente.</block>
+  <block id="59bd66df580d523ff75f2f14d71cbfba" category="section-title">Paso 3: Preparar la imagen de Docker</block>
+  <block id="1583e6f28b5a94010ccbff4b211cf164" category="list-text">Copie el archivo de la solución<block ref="e2e5a273eb632b27931109b94363bfa4" prefix=" " category="inline-code"></block> en la máquina virtual donde se ejecutará el código de automatización.</block>
+  <block id="a9cee25f8101a0b7e8bc418e553db115" category="paragraph">El parámetro de entrada<block ref="043160dcb5097e884764ebf29a002108" prefix=" " category="inline-code"></block> es el archivo de claves privadas utilizado para la autenticación de máquinas virtuales de AWS (instancia de EC2).</block>
+  <block id="5bf6ad91952b7b410f614bf4f47ee74d" category="list-text">Navegue a la nueva carpeta<block ref="804b3b576c8aedfaa09cc28be60f1097" prefix=" " category="inline-code"></block> creada con la operación de descompresión y enumere los archivos. Debería ver el archivo<block ref="7f21d511f3ea5ac118017dac851e5a60" prefix=" " category="inline-code"></block>.</block>
+  <block id="031ddc5e28574d7beef407bb3a376abb" category="paragraph">Deberías ver la imagen de Docker<block ref="81c70cfb21f45bc2a3c41f0d2ed0003c" prefix=" " category="inline-code"></block> con la etiqueta<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block>.</block>
+  <block id="bea5b0eda245fd21f1bd3174f88309f6" category="section-title">Paso 4: Crear un archivo de entorno para las credenciales de AWS</block>
+  <block id="85ab87e6125fceec8f3f9e633f04a9fd" category="paragraph">Se debe crear un archivo de variable local para la autenticación mediante la clave secreta y de acceso. A continuación, agregue el archivo al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="873ad79df92c6b0df440ed58e44300b5" category="paragraph">El formato *debe* ser exactamente como se muestra arriba sin ningún espacio entre<block ref="3c6e0b8a9c15224a8228b9a98ca1531d" prefix=" " category="inline-code"></block> y.<block ref="2063c1608d6e0baf80249c42e2be5804" prefix=" " category="inline-code"></block></block>
+  <block id="423e06db3953a640c8e0c5ab2eb01548" category="list-text">Agregue la ruta de acceso absoluta al<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo mediante la<block ref="b27e63237977193bd02ece4d310f350d" prefix=" " category="inline-code"></block> variable. Por ejemplo:</block>
+  <block id="700069552231d0e34cbcaa73f9eeb396" category="paragraph">Asegúrese de actualizar el nombre del volumen (último parámetro) al valor apropiado antes de ejecutar el comando.</block>
+  <block id="08ca2d9e8619b21704ee99b0a0e48780" category="paragraph"><block ref="3fb369c4eb9902db9fb4d00dde0037b9" prefix="" category="inline-code"></block></block>
+  <block id="304b5291bcb766f7317eb5ae2bdd4019" category="paragraph">En su lugar, se puede agregar un recurso compartido de NFS como volumen externo mediante un comando, como el siguiente:</block>
+  <block id="60bb8f59340b0540e615ba401eb6f342" category="paragraph"><block ref="42b28ae88d0c406dc3dd7176c2a9b744" prefix="" category="inline-code"></block></block>
+  <block id="c8aec0081255af21649b84533e594b33" category="list-text">Navegue a la carpeta<block ref="b148c96a50867a6f53a047e40dd52f0f" prefix=" " category="inline-code"></block>.</block>
+  <block id="dfaffc9af3fdd1bca808fa0c6e5d7a71" category="inline-link">Recurso de Terraform: aws_fsx_ONTAP_file_system</block>
+  <block id="4ba7a7578e05d12d7f279565f5f83301" category="paragraph">Consulte<block ref="9b30e1cf19d336589953be1634689dbb" category="inline-link-rx"></block> para obtener más información.</block>
+  <block id="3a8fcfd918302105b53502e9b246954c" category="section-title">Paso 6: Aprovisionar Amazon FSx para NetApp ONTAP y FlexCache</block>
+  <block id="20914d72ffe8f6cd37a7498b6c69ee4d" category="paragraph">Puedes aprovisionar Amazon FSx para NetApp ONTAP y FlexCache.</block>
+  <block id="734d8f47d8017558876620cba1f85ef8" category="list-text">Navegue hasta la raíz de la carpeta (AWS_FSXN_BTC) y ejecute el comando de aprovisionamiento.</block>
+  <block id="232a9206f868eb2f8bf150cfcafac72e" category="paragraph">Este comando crea dos contenedores. El primer contenedor pone en marcha FSx para ONTAP y el segundo contenedor crea las relaciones entre iguales de clústeres, las relaciones entre iguales de SVM, el volumen de destino y FlexCache.</block>
+  <block id="b121988a991077eff9b8fab3833d17c9" category="list-text">Supervisar el proceso de aprovisionamiento.</block>
+  <block id="6a5c4fa24efdb93a23ec6867c1681a70" category="paragraph">Este comando le da la salida en tiempo real, pero se ha configurado para capturar los logs a través del archivo<block ref="ecb0093a5689314955e28495cd621753" prefix=" " category="inline-code"></block>. Puede cambiar el nombre de estos archivos log editando el<block ref="f579cccc964135c7d644c7b2d3b0d3ec" prefix=" " category="inline-code"></block> archivo y actualizando las variables<block ref="c5d1ae1057f05d40dd703a96c9da0064" prefix=" " category="inline-code"></block>.</block>
+  <block id="2f7df027134d1eac67df16674e7de843" category="section-title">Paso 7: Destruye Amazon FSx para NetApp ONTAP y FlexCache</block>
+  <block id="65e99bdb541de0d7f87a527201891f0c" category="paragraph">Opcionalmente, puedes eliminar y eliminar Amazon FSx for NetApp ONTAP y FlexCache.</block>
+  <block id="df00ee6e5793390a9bf8499863d1b627" category="list-text">Defina la variable<block ref="5d5e8f80b073e02bba21ac9d801fc018" prefix=" " category="inline-code"></block> del<block ref="b5f9e43085599050738084372b6e118c" prefix=" " category="inline-code"></block> archivo en Destruir.</block>
+  <block id="b09bcceed36b91fd5e644ee4cb5cdf12" category="list-text">Navegue hasta la raíz de la carpeta (AWS_FSXN_BTC) y ejecute el siguiente comando.</block>
+  <block id="eb4ca443b43911bd41a972146ea8aeb9" category="paragraph">Este comando crea dos contenedores. El primer contenedor elimina FlexCache y el segundo contenedor elimina FSx para ONTAP.</block>
+  <block id="22c8fb002c798abcdaf4fdfd18455233" category="summary">Puedes utilizar esta solución de automatización para realizar un backup de recuperación ante desastres de un sistema de origen usando Amazon FSx para NetApp ONTAP.</block>
+  <block id="f4ee6b957e5f8546975ddd27ba00b1bd" category="list-text">Cree una relación entre iguales de SVM entre el sistema de origen y el de destino para SnapMirror</block>
+  <block id="2f061612da9689d76bf56673168e2297" category="list-text">Crear volúmenes de destino</block>
+  <block id="dbb08ca779fd51a560153cc09df81650" category="list-text">Crear una relación de SnapMirror entre los volúmenes de origen y de destino</block>
+  <block id="eeaef5d40a1542106e9663a57c6482dc" category="list-text">Inicie la transferencia de SnapMirror entre los volúmenes de origen y destino</block>
+  <block id="f71e567e0fe1a0701e68250c9840e0f6" category="list-text">Debe descargar<block ref="c208e09af5b3f1aa2f6ca7adecbcd891" category="inline-link-rx"></block> la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como<block ref="d588083a4963fc0f1cdbef6c659ba457" prefix=" " category="inline-code"></block>. Este zip contiene el<block ref="b0de125824ad7cd9060627a012eaff36" prefix=" " category="inline-code"></block> archivo que utilizará para desplegar la solución descrita en este documento.</block>
+  <block id="ab09fa6df19fb24ca880041bdb3f02ab" category="list-text">Una cuenta de AWS.</block>
+  <block id="b2d8334d3cf3b13276df502c705f15fb" category="paragraph">Primero comprueba si el grupo *docker* existe en tu sistema Linux. Si no existe, cree el grupo y agregue el usuario. De forma predeterminada, el usuario de shell actual se agrega al grupo.</block>
+  <block id="7635c17776cd29c2e15ffd362c18e458" category="list-text">Copie el archivo de la solución<block ref="b0de125824ad7cd9060627a012eaff36" prefix=" " category="inline-code"></block> en la máquina virtual donde se ejecutará el código de automatización.</block>
+  <block id="4f54d55f70d6f1d62f43648351d5c5dd" category="list-text">Navegue a la nueva carpeta<block ref="f7aff7c7618f7ee27560577fe98c2833" prefix=" " category="inline-code"></block> creada con la operación de descompresión y enumere los archivos. Debería ver el archivo<block ref="fe7ff676a12aed3dc13a09258ef628d6" prefix=" " category="inline-code"></block>.</block>
+  <block id="cc2fa4c7352d39d9795e3542476310c9" category="paragraph">Deberías ver la imagen de Docker<block ref="e7562d34ac9593df3f0c93af6aa7b455" prefix=" " category="inline-code"></block> con la etiqueta<block ref="71ccb7a35a452ea8153b6d920f9f190e" prefix=" " category="inline-code"></block>.</block>
+  <block id="f785d2a0081b2bce36e7fe1271cc703d" category="paragraph"><block ref="92324740c7590fac3dbf74d6249765f1" prefix="" category="inline-code"></block></block>
+  <block id="29b9385593b2b1db0f42dd84ee0368a4" category="section-title">Paso 6: Implemente la solución de backup</block>
+  <block id="2b046f31ccf6a832feec7ccc6d559ba7" category="paragraph">Puede poner en marcha y aprovisionar la solución de backup de recuperación ante desastres.</block>
+  <block id="ae02081afe9376facc1c24f22653d5ea" category="list-text">Navegue hasta la raíz de la carpeta (aws_FSxN_Bck_Prov) y ejecute el comando de provisionamiento.</block>
+  <block id="5f8f895f15cbad16f2c5089a5d5bbac7" category="paragraph">Este comando crea tres contenedores. El primer contenedor pone en marcha FSx para ONTAP. El segundo contenedor crea la relación de iguales de clústeres, la relación entre iguales de SVM y el volumen de destino. El tercer contenedor crea la relación de SnapMirror e inicia la transferencia de SnapMirror.</block>
+  <block id="3a60832c3a8b212f3149f020ee5f00e0" category="summary">Para personalizar la solución de ONTAP day 0/1 según sus requisitos, puede agregar o cambiar roles de Ansible.</block>
+  <block id="a39db44ed3ee84ca1e655864af327c3e" category="doc">Personalizar la solución ONTAP day 0/1</block>
+  <block id="e519ebda2f8e2f99e9eccd1619f73b70" category="paragraph">Los roles representan los microservicios dentro del marco de Ansible. Cada microservicio realiza una operación. Por ejemplo, el día 0 de ONTAP es un servicio que contiene varios microservicios.</block>
+  <block id="5f7cdbeb93ee6dbc2da088eaf5272b60" category="section-title">Añada roles de Ansible</block>
+  <block id="9792cb53e29ccfe60864042b000be1d6" category="paragraph">Puede añadir roles de Ansible para personalizar la solución para su entorno. Los roles requeridos se definen por definiciones de servicio dentro del marco de Ansible.</block>
+  <block id="a4c415112930d2714fbb9cd04e95cc02" category="paragraph">Un rol debe cumplir los siguientes requisitos para ser utilizado como microservicio:</block>
+  <block id="fde86c0e208385fd48041a1c96807460" category="list-text">Acepte una lista de argumentos en la<block ref="a956af09162870af6ce4ebe0f12ccaf8" prefix=" " category="inline-code"></block> variable.</block>
+  <block id="853bdd8adea7e8a24dfdf6a209c707fc" category="list-text">Utilice la estructura «bloque, rescate, siempre» de Ansible con ciertos requisitos para cada bloque.</block>
+  <block id="612e6816ac28fd812b5a75965bcd8cff" category="list-text">Utilice un único módulo de Ansible y defina una única tarea dentro del bloque.</block>
+  <block id="de506dee9c2ba21aa15fcdf0c6f5e1c8" category="list-text">Implemente todos los parámetros de módulo disponibles de acuerdo con los requisitos detallados en esta sección.</block>
+  <block id="a748d0bfc8e8beaa635093f03194c9ca" category="paragraph-title">Estructura de microservicios requerida</block>
+  <block id="f99f3d12f5810dc19a13a174d710f42d" category="paragraph">Cada rol debe admitir las siguientes variables:</block>
+  <block id="20e6dc62b50f7c05457523951458f137" category="list-text"><block ref="15d61712450a686a7f365adf4fef581f" prefix="" category="inline-code"></block>: Si el modo se establece en<block ref="098f6bcd4621d373cade4e832627b4f6" prefix=" " category="inline-code"></block> el rol intenta importar el<block ref="d894ed67e2008e18887400a33f7d82b3" prefix=" " category="inline-code"></block> que muestra lo que hace el rol sin ejecutarlo realmente.</block>
+  <block id="ae7003ac7a09f4e5c1fb23855df75426" category="admonition">No siempre es posible implementar esto debido a ciertas interdependencias.</block>
+  <block id="9a9837c4ea5cfa11237d274bceb29741" category="list-text"><block ref="9acb44549b41563697bb490144ec6258" prefix="" category="inline-code"></block>: El estado general de la ejecución de playbook. Si el valor no está definido en<block ref="260ca9dd8a4577fc00b7bd5810298076" prefix=" " category="inline-code"></block> el rol no se ejecuta.</block>
+  <block id="289d7b4bb2feab502d9a212b42c3f1ab" category="list-text"><block ref="a956af09162870af6ce4ebe0f12ccaf8" prefix="" category="inline-code"></block> : Una lista de diccionarios específicos de roles con claves que coinciden con los nombres de parámetros de rol.</block>
+  <block id="8ff5878883120865a2941e0cf77da607" category="list-text"><block ref="87d8e5afbdd7faa9a2b44f295592971e" prefix="" category="inline-code"></block>: Recopla mensajes de registro durante la ejecución de playbook. Se genera una entrada cada vez que se ejecuta el rol.</block>
+  <block id="b981ebb97f66df09ada4ee7fe994d8a6" category="list-text"><block ref="29e2220ac62f78edcd3a3d7ed0b894e7" prefix="" category="inline-code"></block>: El nombre utilizado para hacer referencia al rol dentro de las<block ref="87d8e5afbdd7faa9a2b44f295592971e" prefix=" " category="inline-code"></block> entradas.</block>
+  <block id="706e8ac67577228b7301f337c05d5a4c" category="list-text"><block ref="ed67d6416808c5142fcb0f0db0f273cd" prefix="" category="inline-code"></block>: Una breve descripción de lo que hace el rol.</block>
+  <block id="aca98bf9e54f0ede5f65c9ebc282b285" category="list-text"><block ref="e2641a3869c87d3c55be62d8e27bf2ec" prefix="" category="inline-code"></block>: La marca de tiempo utilizada para rastrear la hora en que se ejecuta cada rol.</block>
+  <block id="b009de5267784e1110b6d73ff7e5b7a5" category="list-text"><block ref="77a7926065db32b18bfdba747eb7ba4f" prefix="" category="inline-code"></block>: El estado del libro de estrategia de Ansible.</block>
+  <block id="7167aa2942be3244d7682117b5024474" category="list-text"><block ref="b9b72b2d657acc4011b17d4e3538cb6a" prefix="" category="inline-code"></block>: La variable que contiene la salida de rol y se incluye en cada mensaje dentro de las<block ref="87d8e5afbdd7faa9a2b44f295592971e" prefix=" " category="inline-code"></block> entradas.</block>
+  <block id="1284b4625c389dc1b799e9bf9797893f" category="section-title">Ejemplo de estructura de roles</block>
+  <block id="a461ddc90e22526056d19b7d7c3b5c9b" category="paragraph">El siguiente ejemplo proporciona la estructura básica de un rol que implementa un microservicio. Debe cambiar las variables de este ejemplo para su configuración.</block>
+  <block id="6015ee0c3c4dbc37f534783a65239e72" category="example-title">Muestra el ejemplo</block>
+  <block id="986565251a5990a48b0de976914c9096" category="paragraph">Estructura de rol básica:</block>
+  <block id="0f117eeba57be664f9a6c864330a9c1a" category="list-title">Variables utilizadas en el rol de ejemplo:</block>
+  <block id="acde94a0a700ea5f58a8fcc3b8d78626" category="list-text"><block ref="244f00a3349fd07fa67e97687a6da12c" prefix="" category="inline-code"></block>: Un valor reemplazable que se debe proporcionar para cada microservicio.</block>
+  <block id="32496e6f80092291104d27c1e90558a9" category="list-text"><block ref="56eeefca8463ee1da9f9b0eba1c6175c" prefix="" category="inline-code"></block>: El nombre de forma corta del rol utilizado para fines de registro. Por ejemplo,<block ref="afe6113beecc2e4b6d286b1e804a6a33" prefix=" " category="inline-code"></block>.</block>
+  <block id="e0a3b145d88b714c50323406ae15a92c" category="list-text"><block ref="deb4d3f15e76769fb73b181140196dc2" prefix="" category="inline-code"></block>: Una breve descripción de lo que hace el microservicio.</block>
+  <block id="a2fefb64f669ce7b58d5e1da02ec0c98" category="list-text"><block ref="430ff63a80ab0e4a3320ca6508a37b7f" prefix="" category="inline-code"></block>: El nombre del módulo de Ansible para la tarea.</block>
+  <block id="6b77599ae9c0d693379047b3d7feac8b" category="admonition">El libro de estrategia de nivel superior<block ref="ca380769ec32e06471564ff621abee10" prefix=" " category="inline-code"></block> especifica<block ref="4642aad555bac9e7c3ceacc049add95a" prefix=" " category="inline-code"></block> la colección. Si el módulo forma parte de la<block ref="4642aad555bac9e7c3ceacc049add95a" prefix=" " category="inline-code"></block> colección, no es necesario especificar completamente el nombre del módulo.</block>
+  <block id="1b3b183ab186bc2a94760b8c3e2a81ba" category="list-text"><block ref="1b527b09eaa84948eb79a1abe367c022" prefix="" category="inline-code"></block>: Parámetros del módulo Ansible específicos del módulo utilizado para implementar el microservicio. En la siguiente lista se describen los tipos de parámetros y cómo se deben agrupar.</block>
+  <block id="17fc137b5ff827b9eefa4695248573aa" category="list-text">Parámetros necesarios: Se especifican todos los parámetros necesarios sin valor por defecto.</block>
+  <block id="9a5f377982427a95d81521189b77053b" category="list-text">Parámetros que tienen un valor predeterminado específico del microservicio (no el mismo que un valor predeterminado especificado por la documentación del módulo).</block>
+  <block id="655959bde6a9d49a2baf7033bcefd581" category="list-text">Todos los parámetros restantes se utilizan<block ref="f78c4f59c75aec8866555b66ada905fb" prefix=" " category="inline-code"></block> como valor predeterminado.</block>
+  <block id="b08cf9df52f3fb9947bcaefcecbbd6ba" category="section-title">Uso de diccionarios de varios niveles como parámetros de módulo</block>
+  <block id="03b5547049df79453fe5e11a76bbfe9f" category="paragraph">Algunos módulos Ansible que proporcionan NetApp utilizan diccionarios de varios niveles para los parámetros de los módulos (por ejemplo, grupos de políticas de calidad de servicio fijos y adaptativos).</block>
+  <block id="24949ded3f8c8b9cca35801089ab0a3a" category="paragraph">El uso<block ref="f78c4f59c75aec8866555b66ada905fb" prefix=" " category="inline-code"></block> solo no funciona cuando se utilizan estos diccionarios, especialmente cuando hay más de uno y son mutuamente excluyentes.</block>
+  <block id="15e05a9805c3c7a5a71192b2361781df" category="paragraph">Si necesita utilizar diccionarios de varios niveles como parámetros de módulo, debe dividir la funcionalidad en múltiples microservicios (roles) para que cada uno tenga garantizado que proporcione al menos un valor de diccionario de segundo nivel para el diccionario relevante.</block>
+  <block id="dc357c0de7db7f1fe49991f341ba86f8" category="paragraph">Los siguientes ejemplos muestran grupos de políticas de calidad de servicio fijos y adaptativos divididos en dos microservicios.</block>
+  <block id="e77d1458585cd30e68a9487151a71165" category="paragraph">El primer microservicio contiene valores de grupo de políticas de QoS fijos:</block>
+  <block id="54eb726b1e7e38131ecee9d32b28d8fb" category="paragraph">El segundo microservicio contiene los valores del grupo de políticas de QoS adaptativo:</block>
+  <block id="e79beacb3282b51439b4d5e221311a93" category="summary">Después de completar la preparación y la planificación, estará listo para utilizar la solución ONTAP day 0/1 para configurar rápidamente un clúster ONTAP con Ansible.</block>
+  <block id="f67f58fc21115bd09b9463ac656ce110" category="doc">Ponga en marcha el clúster de ONTAP utilizando la solución</block>
+  <block id="69b2879edec7d7d492c706f433d5deb7" category="paragraph">En cualquier momento durante los pasos de esta sección, puede elegir probar una solicitud en lugar de ejecutarla realmente. Para probar una solicitud, cambie la<block ref="b53526f58340b9c206b05605d2b1fe6c" prefix=" " category="inline-code"></block> tableta playbook en la línea de comandos a<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block>.</block>
+  <block id="e00f84decc9d1cd24a745516ec4a5e49" category="admonition"><block ref="2ee3552b051b566d8312af57f2034131" prefix=" " category="inline-code"></block>La ubicación contiene la versión final de todas las solicitudes de servicio utilizadas en este procedimiento. Si tiene dificultades para ejecutar una solicitud de servicio, puede copiar la solicitud pertinente del<block ref="a0fc56426902bfdb72c7acbeac39719a" prefix=" " category="inline-code"></block> archivo a la<block ref="2044da948b210fe1889f181b5a033756" prefix=" " category="inline-code"></block> ubicación y modificar los valores codificados según sea necesario (dirección IP, nombres agregados, etc.). A continuación, debería poder ejecutar correctamente la solicitud.</block>
+  <block id="c9e5905fedbc45ca50f5c9ede628d435" category="list-text">Debe tener Ansible instalado.</block>
+  <block id="f6e47baa20f1f0c323313252c9e8d7ab" category="list-text">Debe haber descargado la solución ONTAP day 0/1 y extraído la carpeta a la ubicación deseada en el nodo de control de Ansible.</block>
+  <block id="a92146f18a239f92bddf6a3bc7e2ebf8" category="list-text">El estado del sistema ONTAP debe cumplir con los requisitos y debe tener las credenciales necesarias.</block>
+  <block id="f8199556cf6a62ca9268aa50c99b34a1" category="inline-link-macro">Prepare</block>
+  <block id="1f28ed1870574f51474f77f9d5b2c698" category="list-text">Debe haber completado todas las tareas requeridas descritas en la <block ref="eb9c90d38e8e698db4ffdbac399d48c6" category="inline-link-macro-rx"></block> sección.</block>
+  <block id="ce970e2ff4bee8dbd3d0a9776df11598" category="admonition">Los ejemplos de esta solución utilizan «Cluster_01» y «Cluster_02» como los nombres de los dos clústeres. Debe reemplazar estos valores por los nombres de los clústeres del entorno.</block>
+  <block id="650657963088846925a0dd3f945ce0d5" category="section-title">Paso 1: Configuración inicial del clúster</block>
+  <block id="6e307cdbec6ddb2aca911decf071f15b" category="paragraph">En esta etapa, debe realizar algunos pasos iniciales de configuración del clúster.</block>
+  <block id="8442e825230af99cf8cb6ccdd197e3e1" category="list-text">Navegue a la<block ref="2044da948b210fe1889f181b5a033756" prefix=" " category="inline-code"></block> ubicación y revise la<block ref="4075a5feda217c763e9e712e95ccf833" prefix=" " category="inline-code"></block> solicitud en el archivo. Realice los cambios necesarios en su entorno.</block>
+  <block id="69341bfc4436ad6cfdd7fba4ae4fd7fb" category="list-text">Cree un archivo en<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> la carpeta para la solicitud de servicio. Por ejemplo, cree un archivo<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block> llamado .</block>
+  <block id="fa7a74ea26d6c9a3d11e899a90816dbd" category="paragraph">Copie las siguientes líneas en el nuevo archivo:</block>
+  <block id="4e202a287500f248a8dba98539c186ba" category="list-text">Defina la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable.</block>
+  <block id="04cfb6cf58293b27630847fca25c5230" category="paragraph">Puede utilizar una de las siguientes opciones para definir la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable en el<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block> archivo creado en la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta:</block>
+  <block id="9dd1ebd472dc0668ef5d1147e72199d6" category="list-text">*Opción 1*: Defina manualmente la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable.</block>
+  <block id="fc44b323d2e2c6aadc0437412fe935c8" category="paragraph">Abra el<block ref="3461e44ced274386745e784100511ebe" prefix=" " category="inline-code"></block> archivo con un editor y copie el contenido de la línea 11 a la línea 165. Pegue el contenido bajo<block ref="ae535a1f68fef75ba074b896974a8e79" prefix=" " category="inline-code"></block> la variable en el nuevo<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block> archivo, como se muestra en los siguientes ejemplos:</block>
+  <block id="de78ec69d5ad007d9fe2110bbb7879e4" category="image-alt">Imagen de la línea de archivo desde la que copiar</block>
+  <block id="82dff18b57e8b99bf3c5dcbc03d4b75c" category="paragraph">Archivo de ejemplo<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block>:</block>
+  <block id="02a091477c2501ad0eea45426059dbd3" category="list-text">*Opción 2*: Usa una plantilla Jinja para definir la solicitud:</block>
+  <block id="495ec5c0cd7348747fd87b2c4c38fd4d" category="paragraph">También puede utilizar el siguiente formato de plantilla Jinja para obtener el<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> valor.</block>
+  <block id="066dd7189f56f66200b95c7f4c963c68" category="paragraph"><block ref="04803a0d395d6a68dfa183b3e2f9dddd" prefix="" category="inline-code"></block></block>
+  <block id="39077ab007feb403becaf82ad87afc4a" category="list-text">Realice la configuración inicial del clúster para el primer clúster:</block>
+  <block id="1cbcb619066878e333e196e202b44c14" category="paragraph">Compruebe que no haya errores antes de continuar.</block>
+  <block id="51c3257d8ec827eb37c1d9f0f2f9383f" category="list-text">Repita el comando para el segundo clúster:</block>
+  <block id="1cff109803812329479e0fe02d8e7ddf" category="paragraph">Compruebe que no hay errores en el segundo clúster.</block>
+  <block id="3ae0f4832bf179ac0a43fa4dfc95d1f0" category="paragraph">Cuando se desplaza hacia arriba hacia el principio de la salida de Ansible, debe ver la solicitud que se envió al marco, como se muestra en el siguiente ejemplo:</block>
+  <block id="819e1f156c541ecae0ae4609b3496108" category="list-text">Inicie sesión en cada instancia de ONTAP y compruebe que la solicitud se ha realizado correctamente.</block>
+  <block id="2adacdb601b88549a0f1dc89d9d25ba2" category="section-title">Paso 2: Configurar las LIF de interconexión de clústeres</block>
+  <block id="5a928b79c0673c1a389f077dcd5b171d" category="paragraph">Ahora puede configurar las LIF de interconexión de clústeres añadiendo las definiciones de LIF a la<block ref="4075a5feda217c763e9e712e95ccf833" prefix=" " category="inline-code"></block> solicitud y definiendo<block ref="4d4f0ae7533bf91e88e218470fe3e24f" prefix=" " category="inline-code"></block> el microservicio.</block>
+  <block id="0cea20abe6de06fa5cf8df07d530dd52" category="paragraph">La definición del servicio y la solicitud trabajan conjuntamente para determinar la acción:</block>
+  <block id="af3a6b7880274100b3d2be21426637a2" category="list-text">Si proporciona una solicitud de servicio para un microservicio que no está en las definiciones de servicio, la solicitud no se ejecuta.</block>
+  <block id="4ed447076130b2808cbe68f3298ee7dd" category="list-text">Si proporciona una solicitud de servicio con uno o más microservicios definidos en las definiciones de servicio, pero omitidos de la solicitud, la solicitud no se ejecuta.</block>
+  <block id="69fc382406c927aaf2d5902194965ca8" category="paragraph">El<block ref="2d844918803992959a71cda35d64dffa" prefix=" " category="inline-code"></block> libro de estrategia evalúa la definición del servicio escaneando la lista de microservicios en el orden indicado:</block>
+  <block id="1dc39b4cf693cc9595d041c7d1dd142e" category="list-text">Si hay una entrada en la solicitud con una clave de diccionario que coincida con la<block ref="a956af09162870af6ce4ebe0f12ccaf8" prefix=" " category="inline-code"></block> entrada contenida en las definiciones de microservicio, se ejecuta la solicitud.</block>
+  <block id="d4ccf687cc03bc10652fbb8929777fcf" category="list-text">Si no hay ninguna entrada coincidente en la solicitud de servicio, la solicitud se omite sin errores.</block>
+  <block id="6f24c1d6b08712bd4a5c8faf37887789" category="list-text">Navegue hasta el<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block> archivo que ha creado anteriormente y modifique la solicitud agregando las siguientes líneas a las definiciones de solicitud:</block>
+  <block id="606ba6d5810c04f45a2192f720b50a14" category="list-text">Ejecute el comando:</block>
+  <block id="d85bd58c3ce8654defcea61071d345f4" category="list-text">Inicie sesión en cada instancia para comprobar si las LIF se han agregado al clúster:</block>
+  <block id="e978a126dc89b4a4d15dec7ddd351646" category="paragraph">La salida muestra que las LIF fueron *NOT* agregadas. Esto se debe a que el<block ref="4d4f0ae7533bf91e88e218470fe3e24f" prefix=" " category="inline-code"></block> microservicio todavía necesita definirse en el<block ref="445ee136220060a93c1410f85d1e7e15" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="2bae3366bf5f504191a14bdba48a85a6" category="list-text">Compruebe que las LIF se han añadido a<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> la variable.</block>
+  <block id="6dc58b658c17753826ea5f3f33b34e73" category="paragraph">En el ejemplo siguiente se muestra que las LIF se han agregado a la solicitud:</block>
+  <block id="ba3b4961689715ebaed3f4b107d4277a" category="list-text">Defina el<block ref="4d4f0ae7533bf91e88e218470fe3e24f" prefix=" " category="inline-code"></block> microservicio en en<block ref="4075a5feda217c763e9e712e95ccf833" prefix=" " category="inline-code"></block> el<block ref="445ee136220060a93c1410f85d1e7e15" prefix=" " category="inline-code"></block> archivo.</block>
+  <block id="5f2ab8a2913a0db2656f0e5e3d5432fb" category="paragraph">Copie las siguientes líneas en el archivo para definir el microservicio:</block>
+  <block id="0bfae174d20ef063149ab1a0d60e3387" category="list-text">Ahora que el<block ref="4d4f0ae7533bf91e88e218470fe3e24f" prefix=" " category="inline-code"></block> microservicio se ha definido en la solicitud y en<block ref="445ee136220060a93c1410f85d1e7e15" prefix=" " category="inline-code"></block> el archivo, vuelva a ejecutar la solicitud:</block>
+  <block id="d62201a84050b402a8d6a9ec708ff042" category="list-text">Inicie sesión en cada instancia de ONTAP y compruebe que las LIF se han añadido.</block>
+  <block id="1c421df8aefb3356ffce48460222fd75" category="section-title">Paso 3: De manera opcional, configure varios clústeres</block>
+  <block id="654e9f9901e61bfa439190f10289473a" category="paragraph">Si es necesario, puede configurar varios clústeres en la misma solicitud. Cuando defina la solicitud, debe proporcionar nombres de variables para cada clúster.</block>
+  <block id="d053a339a8945b4aa572d57310bc6062" category="list-text">Agregue una entrada para el segundo clúster del<block ref="cc66140a9c85195d9b5780f76cea37f5" prefix=" " category="inline-code"></block> archivo para configurar ambos clústeres en la misma solicitud.</block>
+  <block id="6446e2c8dbc0beba2da4c4ac96e18373" category="paragraph">El siguiente ejemplo muestra el<block ref="19334c88089d5ea4e8506abe09d5b472" prefix=" " category="inline-code"></block> campo después de agregar la segunda entrada.</block>
+  <block id="68a3961071cd0a8094e3a7d4acc40b29" category="list-text">Aplique los cambios para todos los demás elementos en<block ref="4075a5feda217c763e9e712e95ccf833" prefix=" " category="inline-code"></block>.</block>
+  <block id="e3c1b92d03512d5293cb4e2f6c1f6721" category="list-text">Agregue la interconexión de clústeres a la solicitud copiando las siguientes líneas en el archivo:</block>
+  <block id="5bc28ff93a21c0137307fb2c166a1458" category="list-text">Ejecute la solicitud de Ansible:</block>
+  <block id="30359ba1c52f3d753222c4469c7f0594" category="section-title">Paso 4: Configuración inicial de SVM</block>
+  <block id="e22176e5619444348b1ab7bd5e2f4269" category="paragraph">En esta etapa del procedimiento, configurará las SVM en el clúster.</block>
+  <block id="95d81c02e358f35a77c4aad25d7dd103" category="list-text">Actualice<block ref="f14a772fde5537d27292c54b80919a99" prefix=" " category="inline-code"></block> la solicitud del<block ref="3461e44ced274386745e784100511ebe" prefix=" " category="inline-code"></block> archivo para configurar una relación entre iguales de SVM y SVM.</block>
+  <block id="8cb40aaf00c7c610fdbd0bbf87f06cf1" category="paragraph">Debe configurar lo siguiente:</block>
+  <block id="69e1645b8055ac8ea719f16a6f3091dc" category="list-text">La SVM</block>
+  <block id="9ea7cf33328cfa7bb683441d396cb22c" category="list-text">La relación entre iguales de SVM</block>
+  <block id="1f7a4d29c185488ee3d592347a65678b" category="list-text">La interfaz de SVM para cada SVM</block>
+  <block id="4a9bad9bdb9fa8186b9e4a420e3681aa" category="list-text">Actualice las definiciones de variables en las<block ref="f14a772fde5537d27292c54b80919a99" prefix=" " category="inline-code"></block> definiciones de solicitud. Debe modificar las siguientes definiciones de variables:</block>
+  <block id="051c98386222ef9fb89d416e57eb2805" category="list-text"><block ref="5e2a4388baff5eb83d977b60b6839556" prefix="" category="inline-code"></block></block>
+  <block id="8a76bbb28d793676c66fb69c9d34fb8a" category="list-text"><block ref="d6d2e75e827fff3babc66bc7cd4d2c4b" prefix="" category="inline-code"></block></block>
+  <block id="7c227587d32475a2d0d8e5e431b4e47b" category="list-text"><block ref="2ab00d4b4709660c84910c33ff93860a" prefix="" category="inline-code"></block></block>
+  <block id="131624c8a5a85e9a5df79a6f44b99855" category="list-text"><block ref="6d8e93e3a531c84036d8ee6c4a7193ac" prefix="" category="inline-code"></block></block>
+  <block id="a4d223e5959f843452a82b618cd92d46" category="paragraph">Para actualizar las definiciones, elimine el *'{}'* después de<block ref="da2510542fb040c37348fd55a4e2968f" prefix=" " category="inline-code"></block> la<block ref="f14a772fde5537d27292c54b80919a99" prefix=" " category="inline-code"></block> definición y agregue la definición correcta.</block>
+  <block id="018937c21bd55f94415514135b002565" category="list-text">Cree un archivo en<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> la carpeta para la solicitud de servicio. Por ejemplo, cree un archivo<block ref="11a2eefe20333eac60316832140464f6" prefix=" " category="inline-code"></block> llamado .</block>
+  <block id="31ea89e921d85abb958143fb889cbb8e" category="paragraph">Copie las siguientes líneas en el archivo:</block>
+  <block id="f518da1d3a997752c071b843cb1b8cdb" category="paragraph">Puede utilizar una de las siguientes opciones para definir la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable en<block ref="f14a772fde5537d27292c54b80919a99" prefix=" " category="inline-code"></block> la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta:</block>
+  <block id="911c51f9fb5e1251196aaf5017421f0b" category="paragraph">Abra el<block ref="3461e44ced274386745e784100511ebe" prefix=" " category="inline-code"></block> archivo con un editor y copie el contenido de la línea 179 a la línea 222. Pegue el contenido bajo<block ref="ae535a1f68fef75ba074b896974a8e79" prefix=" " category="inline-code"></block> la variable en el nuevo<block ref="11a2eefe20333eac60316832140464f6" prefix=" " category="inline-code"></block> archivo, como se muestra en los siguientes ejemplos:</block>
+  <block id="03667813c9aaf8235354c44762e0ed49" category="paragraph">Archivo de ejemplo<block ref="11a2eefe20333eac60316832140464f6" prefix=" " category="inline-code"></block>:</block>
+  <block id="0666626e7a5943cfd93e34b0a55b0be2" category="list-text">Ejecute la solicitud:</block>
+  <block id="a9b23522afae517d956137ad503da0fe" category="list-text">Inicie sesión en cada instancia de ONTAP y valide la configuración.</block>
+  <block id="2f92edaa02c5e3fa054b2e288b2680d0" category="list-text">Añada las interfaces de SVM.</block>
+  <block id="1240c38988872a372fd80a55e15b3991" category="paragraph">Defina el<block ref="4d4f0ae7533bf91e88e218470fe3e24f" prefix=" " category="inline-code"></block> servicio en<block ref="f14a772fde5537d27292c54b80919a99" prefix=" " category="inline-code"></block> el<block ref="445ee136220060a93c1410f85d1e7e15" prefix=" " category="inline-code"></block> archivo y vuelva a ejecutar la solicitud:</block>
+  <block id="662981063523ce176fcc480860d6b83d" category="list-text">Inicie sesión en cada instancia de ONTAP y compruebe que las interfaces de SVM se hayan configurado.</block>
+  <block id="70df61d65a1e824b4177a7e573225775" category="section-title">Paso 5: Opcionalmente, defina una solicitud de servicio de forma dinámica</block>
+  <block id="a23e8024f106ce4b582a7daabb77419e" category="paragraph">En los pasos anteriores,<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> la variable está codificada de forma fija. Esto es útil para el aprendizaje, desarrollo y pruebas. También puede generar dinámicamente una solicitud de servicio.</block>
+  <block id="969c0418de9f75151db7be27414cccd5" category="paragraph">La siguiente sección proporciona una opción para producir dinámicamente el requerido<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> si no desea integrarlo con sistemas de nivel superior.</block>
+  <block id="099966be35e7652ef3a75a0578c1ca06" category="list-text">Si la<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> variable no está definida en el comando, el<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> archivo no importa ningún archivo de la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta. Esto significa que<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> debe definirse fuera de Ansible y proporcionarse al marco en la ejecución.</block>
+  <block id="785835eab4b5b4b0798993e4ae435f31" category="list-text">Un nombre de archivo de tarea en la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta debe coincidir con el valor de<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> la variable sin la extensión .yml.</block>
+  <block id="8ad63d7609d350d4452da54371d404d4" category="list-text">Los archivos de tareas de la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta definen dinámicamente a.<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> El único requisito es que se defina una tarea válida<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> como la última tarea del archivo correspondiente.</block>
+  <block id="642cfcbbce916f1fbaf55da894dd19d0" category="paragraph-title">Cómo definir dinámicamente una solicitud de servicio</block>
+  <block id="670c97b07533cefe40be4aac57804c4b" category="paragraph">Hay varias formas de aplicar una tarea lógica para definir dinámicamente una solicitud de servicio. Algunas de estas opciones se enumeran a continuación:</block>
+  <block id="4d737a26bf4fc7dafdf7a809f0d6456e" category="list-text">Uso de un archivo de tareas de Ansible desde la<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> carpeta</block>
+  <block id="9668931f5c5fe85b1273ebbb11423d13" category="list-text">Llamada a un rol personalizado que devuelve datos adecuados para la conversión a un<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable.</block>
+  <block id="24b675b237ada681dab72734be84b686" category="list-text">Invocar otra herramienta fuera del entorno de Ansible para proporcionar los datos necesarios. Por ejemplo, una llamada API DE REST a Active IQ Unified Manager.</block>
+  <block id="a44c29e1364fc78ca29fcf641c6e151c" category="paragraph">Los siguientes comandos de ejemplo definen dinámicamente una solicitud de servicio para cada cluster utilizando el<block ref="3461e44ced274386745e784100511ebe" prefix=" " category="inline-code"></block> archivo:</block>
+  <block id="e8193f08855f1cdb1cfed50f6c9c9a28" category="section-title">Paso 6: Implemente la solución ONTAP day 0/1</block>
+  <block id="0c066141afce97f7a3de0aed74a65c74" category="paragraph">En esta etapa, debería haber completado lo siguiente:</block>
+  <block id="5fee68ecdb341fb77aa0a87c556eab05" category="list-text">Revisó y modificó todos los archivos de<block ref="f3a2a231a2372b03dd8971c98175b25b" prefix=" " category="inline-code"></block> acuerdo con sus requisitos. Hay comentarios detallados en cada archivo para ayudarle a realizar los cambios.</block>
+  <block id="58f144f12d2fa90ef2184a95d4c7b092" category="list-text">Se han agregado los archivos de tareas necesarios al<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> directorio.</block>
+  <block id="7a9f4e65f6716bca20e1aa0e69eb0c99" category="list-text">Se han agregado los archivos de datos necesarios al<block ref="f07484dba90f6e0bc7d2ffcceb80f668" prefix=" " category="inline-code"></block> directorio.</block>
+  <block id="a8fb95bd698e6619a9db7ba78477e09b" category="paragraph">Utilice los siguientes comandos para poner en marcha la solución ONTAP day 0/1 y comprobar el estado de su implementación:</block>
+  <block id="26d103b89c31f51c08d0a902667e4e23" category="admonition">En esta etapa, ya debería haber descifrado y modificado el<block ref="3912b7912aee967aed9396fa22e8992f" prefix=" " category="inline-code"></block> archivo y debe estar cifrado con su nueva contraseña.</block>
+  <block id="61108e425a34ca2a08e4b6d8de1fdd39" category="list-text">Ejecute el servicio ONTAP day 0:</block>
+  <block id="6817b9fa9885bee0930b3b4228ed5388" category="list-text">Ejecute el servicio ONTAP day 1:</block>
+  <block id="3d0df78c0fdb280d7b0d885385201695" category="list-text">Aplicar configuración en todo el clúster:</block>
+  <block id="9d0205d1134f0ab28a2874186a12ec34" category="list-text">Ejecute comprobaciones de estado:</block>
+  <block id="17c761a11951117029007cd93c65d41a" category="summary">Puede utilizar la solución de automatización de ONTAP day 0/1 para poner en marcha y configurar un clúster de ONTAP con Ansible.</block>
+  <block id="ce1b4b763945d110a649a02482fbcfc8" category="doc">Descripción general de la solución ONTAP Day 0/1</block>
+  <block id="938b95aae63a47e32d020b98cc8da4ee" category="paragraph">Puede utilizar la solución de automatización de ONTAP day 0/1 para poner en marcha y configurar un clúster de ONTAP con Ansible. La solución está disponible en la <block ref="69fc0bc0dbcda94a1b23d119909bded4" category="inline-link-macro-rx"></block>.</block>
+  <block id="e702c4fe4e434a01bef1ca713c45f0ed" category="section-title">Opciones flexibles de puesta en marcha de ONTAP</block>
+  <block id="2c852cf076c4790c9b25650b6b2701bf" category="paragraph">En función de sus requisitos, se puede usar hardware en las instalaciones o simular ONTAP para poner en marcha y configurar un clúster de ONTAP con Ansible.</block>
+  <block id="1bce5b3d3b7f1e2bd8394a8dc78e10f8" category="paragraph-title">Hardware en las instalaciones</block>
+  <block id="79840ba80cb88b01418916dd4dcb3e90" category="paragraph">Puede poner en marcha esta solución con hardware en las instalaciones que ejecute ONTAP, como un sistema FAS o AFF. Debe utilizar una máquina virtual Linux para poner en marcha y configurar el clúster de ONTAP mediante Ansible.</block>
+  <block id="cd80466b86e7ace47613645fe98bec8f" category="paragraph-title">Simular ONTAP</block>
+  <block id="8414d22444023ab6e8f0463b05e00529" category="paragraph">Para implementar esta solución mediante un simulador de ONTAP, debe descargar la versión más reciente de Simulate ONTAP del sitio de soporte de NetApp. Simulate ONTAP es un simulador virtual para el software ONTAP. Simulate ONTAP se ejecuta en un hipervisor de VMware en un sistema Windows, Linux o Mac. Para hosts Windows y Linux, debe usar el hipervisor de VMware Workstation para ejecutar esta solución. Si tiene un sistema operativo Mac, utilice el hipervisor VMware Fusion.</block>
+  <block id="10215767cfe452fee1a14c06950c5ac1" category="section-title">Diseño en capas</block>
+  <block id="d4f5c9af2c0e6b9ebda5816cdc3fa99f" category="paragraph">El marco de Ansible simplifica el desarrollo y la reutilización de las tareas lógicas y de ejecución de automatización. El marco hace una distinción entre las tareas de toma de decisiones (capa lógica) y los pasos de ejecución (capa de ejecución) en la automatización. Comprender cómo funcionan estas capas le permite personalizar la configuración.</block>
+  <block id="abeb6037fedd9150a081f9e2deb33896" category="paragraph">Un «libro de estrategia» de Ansible ejecuta una serie de tareas que van de principio a fin. <block ref="b53526f58340b9c206b05605d2b1fe6c" prefix=" " category="inline-code"></block>el libro de estrategia contiene<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> el libro de estrategia y<block ref="2d844918803992959a71cda35d64dffa" prefix=" " category="inline-code"></block> el libro de estrategia.</block>
+  <block id="a4a3a90fa97562006e0497d3e789902c" category="paragraph">Cuando se ejecuta una solicitud,<block ref="b53526f58340b9c206b05605d2b1fe6c" prefix=" " category="inline-code"></block> el libro de aplicaciones realiza primero una llamada al<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> libro de aplicaciones y, a continuación, llama a él<block ref="2d844918803992959a71cda35d64dffa" prefix=" " category="inline-code"></block> para ejecutar la solicitud de servicio.</block>
+  <block id="7198595b648c9d0f51c72f32fd72f708" category="paragraph">No es necesario que utilice la capa lógica del marco. La capa lógica proporciona opciones para ampliar la capacidad del marco más allá de los valores codificados para la ejecución. Esto le permite personalizar las capacidades del marco si es necesario.</block>
+  <block id="e756b27e6e80d488f5f02c55696cc417" category="paragraph-title">Capa lógica</block>
+  <block id="132132b5cd4d9c6b28bf41f7440e7397" category="paragraph">La capa lógica consta de lo siguiente:</block>
+  <block id="7077b0e89e95deb88db1362bdf451185" category="list-text">El<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> libro de estrategia</block>
+  <block id="f67e6a8689ed9b6571414e867c1c542e" category="list-text">Archivos de tareas lógicas dentro del<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> directorio</block>
+  <block id="f092dd00e304c02ab6c789ec7aa9b765" category="paragraph">La capa lógica proporciona la capacidad de tomar decisiones complejas sin la necesidad de una integración personalizada significativa (por ejemplo, conectarse a ServiceNow). La capa lógica es configurable y proporciona la entrada a los microservicios.</block>
+  <block id="d9233d7005e4c541a7b190aff14433fb" category="paragraph">También se proporciona la capacidad de omitir la capa lógica. Si desea omitir la capa lógica, no defina la<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> variable. La invocación directa<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> del libro de estrategia proporciona la capacidad de realizar algún nivel de depuración sin ejecución. Puede utilizar una sentencia de depuración para verificar que el valor de<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> es correcto.</block>
+  <block id="74c043a4451dd260729a23ce96aa1550" category="paragraph">Consideraciones importantes:</block>
+  <block id="7be64e4db9217063872c379ada1cac40" category="list-text">El<block ref="c465de0cece63ea8509a647e635b17c0" prefix=" " category="inline-code"></block> libro de estrategia buscará<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> la variable. Si la variable está definida en la solicitud, carga un archivo de tareas desde el<block ref="75b40fb77b55e9fe6e2bb6ad402cc693" prefix=" " category="inline-code"></block> directorio. El archivo de tarea debe ser un archivo .yml. Si no hay ningún archivo de tarea coincidente y la<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> variable está definida, la capa lógica falla.</block>
+  <block id="d98273cf071a1dcdc2914998c9c06f5d" category="list-text">El valor por defecto de<block ref="007b8516a35384c54a7acc9f37b55a7e" prefix=" " category="inline-code"></block> la variable es<block ref="dd757411655313368576c12809f2d3cf" prefix=" " category="inline-code"></block>. Si la variable no está definida de forma explícita, se establece por defecto en<block ref="dd757411655313368576c12809f2d3cf" prefix=" " category="inline-code"></block>, que no ejecuta ninguna operación.</block>
+  <block id="ed1e820275569388321d5a5d43d7366b" category="list-text">Si la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable ya está definida, la ejecución continúa a la capa de ejecución. Si la variable no está definida, la capa lógica falla.</block>
+  <block id="7d0131c9e53e2fccec17a64c37087928" category="paragraph-title">Capa de ejecución</block>
+  <block id="1dbfcc91f8fc076d5b81299acfb30472" category="paragraph">La capa de ejecución consta de lo siguiente:</block>
+  <block id="1df1f77f9418eb70dab4210490751168" category="list-text">El<block ref="2d844918803992959a71cda35d64dffa" prefix=" " category="inline-code"></block> libro de estrategia</block>
+  <block id="0733f6600fa53da5bd9bb761c9418926" category="paragraph">La capa de ejecución realiza las llamadas API para configurar un clúster de ONTAP. El<block ref="2d844918803992959a71cda35d64dffa" prefix=" " category="inline-code"></block> playbook requiere que la<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block> variable se defina al ejecutarse.</block>
+  <block id="2330d9559aba5d875f0a3ace765be9b3" category="section-title">Soporte para personalización</block>
+  <block id="e5d452109d49c3b233caedcc6c32239a" category="paragraph">Puede personalizar esta solución de varias maneras en función de sus requisitos.</block>
+  <block id="57554042dc669ef71f7be3dae330062d" category="paragraph">Las opciones de personalización incluyen:</block>
+  <block id="48a32614b3f512ccb52f0ba14a957a8a" category="list-text">Modificar libros de estrategia de Ansible</block>
+  <block id="309bb3d46e5674f5b1029bdb94cce9aa" category="list-text">Agregar roles</block>
+  <block id="c47bd4e498fcf5d8f1e57c89694cbe11" category="paragraph-title">Personalizar los archivos de Ansible</block>
+  <block id="3521b4512d264fbc43c2574fe051e48f" category="paragraph">La siguiente tabla describe los archivos Ansible personalizables que contiene esta solución.</block>
+  <block id="ce5bf551379459c1c61d2a204061c455" category="cell">Ubicación</block>
+  <block id="2ec1d18a1774ea87947142dc46b2f6ce" category="paragraph"><block ref="40a8d919c80f6abb832862b973eef486" prefix="" category="inline-code"></block></block>
+  <block id="4f5bb1bb05259a299bb33eb183164765" category="cell">Contiene un único archivo con una lista de hosts y grupos.</block>
+  <block id="6832bfd7d6c23101956f53eedea9a07e" category="paragraph"><block ref="1989a8aa7d1ca33ab2771c35f6a3b396" prefix="" category="inline-code"></block></block>
+  <block id="4e52f223036927f3d5c8161fa369a276" category="cell">Ansible proporciona una forma cómoda de aplicar variables a varios hosts a la vez. Puede modificar cualquiera o todos los archivos de esta carpeta, incluidos<block ref="36a3449caf99a34cb1d8022e430885db" prefix=" " category="inline-code"></block>,<block ref="29b77f11d52fe65eaad409aca6c3df86" prefix=" " category="inline-code"></block>, ,<block ref="300f81a8e09fa45753cd33f0805a51b4" prefix=" " category="inline-code"></block><block ref="445ee136220060a93c1410f85d1e7e15" prefix=" " category="inline-code"></block><block ref="291578eb760a4ef42e583c75ce58e4ad" prefix=" " category="inline-code"></block> , , y<block ref="3912b7912aee967aed9396fa22e8992f" prefix=" " category="inline-code"></block>.</block>
+  <block id="6d5b0238fe29916040f6836fdbca2c10" category="paragraph"><block ref="57e5296f8de4202e7666150e5a07b66c" prefix="" category="inline-code"></block></block>
+  <block id="a1560b23484f75c46c99364f51488483" category="cell">Admite tareas de toma de decisiones en Ansible y mantiene la separación de la lógica y la ejecución. Puede agregar archivos a esta carpeta que se correspondan con el servicio pertinente.</block>
+  <block id="2556f59c042e988eacc543bf1211576f" category="paragraph"><block ref="ed6b2bace80e9219b3b4b88a28b24931" prefix="" category="inline-code"></block></block>
+  <block id="6c22171e02ab0bcc45503950f8ec8ceb" category="cell">Los valores dinámicos utilizados en los libros de estrategia y roles de Ansible para permitir la personalización, flexibilidad y reutilización de las configuraciones. Si es necesario, puede modificar cualquiera o todos los archivos de esta carpeta.</block>
+  <block id="43c0adaca4097ff69ce673d693ae4975" category="paragraph-title">Personalizar roles</block>
+  <block id="63a78ed4647f7c63c2929e35ec1c95e3" category="inline-link-macro">Personalizar</block>
+  <block id="26a38ade7503c0cd04b8f1b509e4f722" category="paragraph">También puede personalizar la solución agregando o cambiando funciones de Ansible, también denominadas microservicios. Para obtener más información, consulte <block ref="be6f08049fc3279a78fd26b9aad279b0" category="inline-link-macro-rx"></block>.</block>
+  <block id="a3c705f96125c0b065bb0c0359d448d9" category="summary">Antes de poner en marcha la solución de automatización, debe preparar el entorno de ONTAP e instalar y configurar Ansible.</block>
+  <block id="bcd7770e98050673b0948646aef5b4a3" category="doc">Prepárese para utilizar la solución ONTAP day 0/1</block>
+  <block id="511a5e3236e6ca72bc37beb4e00608c8" category="paragraph">Antes de poner en marcha la solución de automatización, debe preparar el entorno de ONTAP e instalar y configurar Ansible.</block>
+  <block id="1d28d328268f8c328a1aee58ea95652e" category="section-title">Consideraciones de planificación inicial</block>
+  <block id="f277cee795f27cba0f177ab3e95ca135" category="paragraph">Debe revisar los siguientes requisitos y consideraciones antes de usar esta solución para poner en marcha un clúster de ONTAP.</block>
+  <block id="56aa3ed9dba484ac641c5247a15b1ed6" category="paragraph-title">Requisitos básicos</block>
+  <block id="5884c9830547842831d25bedcd58ba1f" category="paragraph">Debe cumplir los siguientes requisitos básicos para utilizar esta solución:</block>
+  <block id="8f2ea0775ea9cd7374805c321d8d77ad" category="list-text">Tiene que tener acceso al software ONTAP, ya sea en las instalaciones o a través de un simulador ONTAP.</block>
+  <block id="9e497289e59c1250a0182732200cca6c" category="list-text">Debe saber cómo utilizar el software ONTAP.</block>
+  <block id="601377003d38b13f1e3f7965681ade97" category="list-text">Debes saber cómo utilizar las herramientas de software de automatización de Ansible.</block>
+  <block id="228d9e0418aa12bae73676a5743558db" category="paragraph-title">Consideraciones DE PLANIFICACIÓN</block>
+  <block id="cc2d466572cb7a67e84b523481eda78c" category="paragraph">Antes de implementar esta solución de automatización, debe decidir:</block>
+  <block id="1fb86fbde8df965d1c2acc196fdf10b1" category="list-text">La ubicación donde se va a ejecutar el nodo de control de Ansible.</block>
+  <block id="19d4ab12a3b6b0cbc567984741a386dc" category="list-text">El sistema ONTAP, ya sea hardware en las instalaciones o un simulador ONTAP.</block>
+  <block id="8549c360a1bd12719e27ec2c7da6f8f9" category="list-text">Independientemente de si necesitará personalización o no.</block>
+  <block id="b96d90d0be7ad23caaf63033f84c36fb" category="section-title">Prepare el sistema ONTAP</block>
+  <block id="fbbff18a3d8c7c1962fe79c6f20fc936" category="paragraph">Tanto si utiliza un sistema ONTAP on-premises o Simulate ONTAP, debe preparar el entorno antes de poder implementar la solución de automatización.</block>
+  <block id="2dc4e6ed82f1c6a1ef0440f23a8da7e6" category="section-title">Opcionalmente, instale y configure Simulate ONTAP</block>
+  <block id="bd35b012ab072b51c3bd65dabfb8fbd1" category="paragraph">Si desea implementar esta solución mediante un simulador de ONTAP, debe descargar y ejecutar Simulate ONTAP.</block>
+  <block id="d01949b1d24fb82fb2b576f4a7471e44" category="list-text">Debe descargar e instalar el hipervisor de VMware que va a utilizar para ejecutar Simulate ONTAP.</block>
+  <block id="65cdd80ab4f7e12f8e5b7f32231e0ab8" category="list-text">Si tiene un sistema operativo Windows o Linux, utilice VMware Workstation.</block>
+  <block id="f13ede118192ec26954aa9a6645a0f1c" category="list-text">Si tiene un sistema operativo Mac, utilice VMware Fusion.</block>
+  <block id="4966eb364a120a592774d73e21aa726d" category="admonition">Si utiliza un sistema operativo Mac, debe tener un procesador Intel.</block>
+  <block id="ed4d7e395d1e68d6a963bab9d5840faf" category="paragraph">Utilice el siguiente procedimiento para instalar dos simuladores de ONTAP en su entorno local:</block>
+  <block id="9c093f14319e8253b8c9b37290597239" category="inline-link-macro">Sitio de soporte de NetApp</block>
+  <block id="14d567f38a663518761cb1833f1b3e04" category="list-text">Descargar Simulate ONTAP desde la <block ref="22276e5909ee8e6f4b2080a10ab98923" category="inline-link-macro-rx"></block>.</block>
+  <block id="7d2f39c9572b8f5bd33d651e0c432667" category="admonition">Aunque instale dos simuladores ONTAP, solo necesita descargar una copia del software.</block>
+  <block id="9dc91177d3e72633b3eb25a758338604" category="list-text">Si todavía no está en ejecución, inicie su aplicación VMware.</block>
+  <block id="f817b66fcefdb548feab388a90f4e715" category="list-text">Busque el archivo del simulador descargado y haga clic con el botón derecho del ratón para abrirlo con la aplicación VMware.</block>
+  <block id="65abc4fb4b5ba8f24c78873e18a1b878" category="list-text">Defina el nombre de la primera instancia de ONTAP.</block>
+  <block id="c4268f119c922c6de8e710fbee3064e0" category="list-text">Espere a que se arranque el simulador y siga las instrucciones para crear un clúster de un solo nodo.</block>
+  <block id="58db0a84115bdfa853ae2f49a12ac6da" category="paragraph">Repita los pasos para la segunda instancia de ONTAP.</block>
+  <block id="418621d9947be870809e9f93dabb19a1" category="list-text">Opcionalmente, agregue un complemento de disco completo.</block>
+  <block id="bad86c77d43d5a9c4a69f2a364388400" category="paragraph">Desde cada clúster, ejecute los siguientes comandos:</block>
+  <block id="c7f1fbea97449df0d856eb5e7f64e5d2" category="section-title">Estado del sistema ONTAP</block>
+  <block id="8c2526e37a2bc814741b5f158eb6374a" category="paragraph">Debe comprobar el estado inicial del sistema ONTAP, ya sea en las instalaciones o ejecutándose a través de un simulador de ONTAP.</block>
+  <block id="bce68ba5163e4dca18508220abae2333" category="paragraph">Compruebe que se cumplen los siguientes requisitos del sistema ONTAP:</block>
+  <block id="1242a14ca5824616337deb53158c160f" category="list-text">ONTAP se ha instalado y se está ejecutando sin definir ningún clúster aún.</block>
+  <block id="ec889d03e2466e36222ccf0d2302c33e" category="list-text">La ONTAP se arranca y muestra la dirección IP para acceder al clúster.</block>
+  <block id="be9c65783b3e166cd0c4a06bd4df05f3" category="list-text">Se puede acceder a la red.</block>
+  <block id="9234db32de6c3a4b18b1ef67b08e33d8" category="list-text">Tiene credenciales de administrador.</block>
+  <block id="6016c43f78514d8d006c5b95578beb47" category="list-text">Se muestra el banner del mensaje del día (MOTD) con la dirección de administración.</block>
+  <block id="8ae7456b8e3b101a795597da308c15b0" category="section-title">Instale el software de automatización necesario</block>
+  <block id="4d1c2fab59a1606d930fa3f52885bf32" category="paragraph">En esta sección se ofrece información sobre cómo instalar Ansible y preparar la solución de automatización para la puesta en marcha.</block>
+  <block id="f06a93025aaeede884d8afe8b690533e" category="section-title">Instale Ansible</block>
+  <block id="dfc27353fecf2eee84854379dce64230" category="paragraph">Ansible se puede instalar en sistemas Linux o Windows.</block>
+  <block id="347333d2772f7846f869e069d4074a45" category="paragraph">El método de comunicación predeterminado que utiliza Ansible para comunicarse con un clúster de ONTAP es SSH.</block>
+  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="inline-link-macro">Introducción a NetApp y Ansible: Instale Ansible</block>
+  <block id="13a3fef14879af3a42bc85867da607c7" category="paragraph">Consulte <block ref="426579bfbf2afd687281b4f5bf0ad5f3" category="inline-link-macro-rx"></block>para instalar Ansible.</block>
+  <block id="d1f1475150df79d2b4245454f64db1bc" category="admonition">Ansible debe instalarse en el nodo de control del sistema.</block>
+  <block id="db89a51ffa65529021b510690e81a8f1" category="section-title">Descarga y prepara la solución de automatización</block>
+  <block id="861c58cb30aa77b0dee3d8e16d6a86a9" category="paragraph">Puedes usar los siguientes pasos para descargar y preparar la solución de automatización para la puesta en marcha.</block>
+  <block id="ab84098f73cfd7f11c2b2ddf36e7b9e0" category="inline-link-macro">ONTAP - Día 0/1 &amp;amp; Comprobaciones de estado</block>
+  <block id="f11ca6ee3cd53a97d005c40f2c226b5b" category="list-text">Descargue <block ref="7d895ad86aecd039f40cc70463ee9858" category="inline-link-macro-rx"></block>la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como<block ref="aa320f9d69cdf44a5e391cb56d0298cd" prefix=" " category="inline-code"></block>.</block>
+  <block id="75286206080ea9682a038a4af04cac12" category="list-text">Extraiga la carpeta zip y copie los archivos en la ubicación deseada en el nodo de control dentro del entorno de Ansible.</block>
+  <block id="5821bfa4f7dace2f5ba97b23a8e2c2bf" category="section-title">Configuración de marco de Ansible inicial</block>
+  <block id="3c82452c939498e2a377a6c3cbdd7221" category="paragraph">Realice la configuración inicial del marco Ansible:</block>
+  <block id="959fda099ad6f3c1beeff00c441e7a0a" category="list-text">Navegar a<block ref="f3a2a231a2372b03dd8971c98175b25b" prefix=" " category="inline-code"></block>.</block>
+  <block id="5a3b2d143e4a4d676cde725e34d10c23" category="list-text">Descifre el<block ref="3912b7912aee967aed9396fa22e8992f" prefix=" " category="inline-code"></block> archivo:</block>
+  <block id="32fd1da982d5f727a37350c883aaac89" category="paragraph"><block ref="0fb77ff3c28e82d934cba904bc060915" prefix="" category="inline-code"></block></block>
+  <block id="aa066c1828177006ee0b3447574781e8" category="paragraph">Cuando se le solicite la contraseña del almacén, introduzca la siguiente contraseña temporal:</block>
+  <block id="e9b64d764b0336fe3124b5030aa0bfc9" category="paragraph"><block ref="0b0ca20ecc3ccf30182fce9ffbd46df6" prefix="" category="inline-code"></block></block>
+  <block id="8116a24c1d2c019a62a318393573f3b4" category="admonition">“NetApp123!” es una contraseña temporal para descifrar el<block ref="3912b7912aee967aed9396fa22e8992f" prefix=" " category="inline-code"></block> archivo y la contraseña del almacén correspondiente. Después de su primer uso, * debe * cifrar el archivo con su propia contraseña.</block>
+  <block id="21b899ea52a44b8aa42e683b18ead863" category="list-text">Modifique los siguientes archivos de Ansible:</block>
+  <block id="a71ae8daba9a8fea33ff7f0e4e2856ab" category="list-text"><block ref="29b77f11d52fe65eaad409aca6c3df86" prefix="" category="inline-code"></block> - Modificar los valores de este archivo para adaptarse a su entorno.</block>
+  <block id="b0788591a0fc1a1c6363979ac9a9345d" category="list-text"><block ref="3912b7912aee967aed9396fa22e8992f" prefix="" category="inline-code"></block> - Después de descifrar el archivo, modifique el clúster de ONTAP, los valores de nombre de usuario y contraseña para adaptarse a su entorno.</block>
+  <block id="a62e977ed9c3008f9de42b20c98167ca" category="list-text"><block ref="36a3449caf99a34cb1d8022e430885db" prefix="" category="inline-code"></block> - Establecer la ruta del archivo para<block ref="8bd3278c7bbc2c6ce03d31a4d66eed73" prefix=" " category="inline-code"></block> y establecer<block ref="6517ae4a61ec8b25b4c8a6f43f077cd2" prefix=" " category="inline-code"></block> debajo de<block ref="011134986548f3458aa3e7e2a7fceb8d" prefix=" " category="inline-code"></block><block ref="f827cf462f62848df37c5e1e94a4da74" prefix=" " category="inline-code"></block> para mostrar el<block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block>.</block>
+  <block id="5001b87047e94f2b12df020cbf099ab5" category="paragraph"><block ref="91cec0838312497faa7f8d043e2229cf" prefix=" " category="inline-code"></block>La variable se muestra en los archivos log y durante la ejecución.</block>
+  <block id="005f5bb71ffa6dd33347eb601417afc7" category="admonition">Cada archivo enumerado contiene comentarios con instrucciones sobre cómo modificarlo de acuerdo con sus requisitos.</block>
+  <block id="e3ce19a673f4610f5c6e7d909363f994" category="list-text">Vuelva a cifrar el<block ref="3912b7912aee967aed9396fa22e8992f" prefix=" " category="inline-code"></block> archivo:</block>
+  <block id="312cf0c9a9e8b4fe4d3e2a391c5e8ad5" category="paragraph"><block ref="3fd94860277ec192b691f50a27a57027" prefix="" category="inline-code"></block></block>
+  <block id="748fe21b6744e129412727b018bd5545" category="admonition">Se le pedirá que elija una nueva contraseña para el almacén tras el cifrado.</block>
+  <block id="ed86b492e7aaacfb4190452e2a041c46" category="list-text">Navegue hasta<block ref="40a8d919c80f6abb832862b973eef486" prefix=" " category="inline-code"></block> y establezca un intérprete de Python válido.</block>
+  <block id="aad3419677f1e390d63467602a94e899" category="list-text">Despliegue el<block ref="cc41996f61df1a8b6998a42441fc3d0b" prefix=" " category="inline-code"></block> servicio:</block>
+  <block id="c1513da956871d8af86a17a937618a96" category="paragraph">El siguiente comando ejecuta el<block ref="54c3d6e9a56aa18d1c5601cce779aad8" prefix=" " category="inline-code"></block> módulo con un<block ref="5ea5d50662005a9ac4d6b2bdb8ba8861" prefix=" " category="inline-code"></block> valor de<block ref="02d915b88810bf056d22248a9aaa5ea5" prefix=" " category="inline-code"></block>. Esto valida que la configuración básica es correcta y verifica que pueda comunicarse con el clúster.</block>
+  <block id="c1162faac9242b1157f7bfbe2794f1ab" category="paragraph">Ejecute el comando para cada clúster.</block>
+  <block id="20681366d6fbf14a1a4e57bfd6d53131" category="paragraph">Si es correcto, debería ver un resultado similar al siguiente ejemplo:</block>
+  <block id="dc52303dcd5fbb81629bbe258412bd00" category="summary">Hay recursos adicionales a los que puede acceder para obtener ayuda y encontrar más información sobre los productos de NetApp así como los servicios cloud.</block>
+  <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">Recursos adicionales</block>
+  <block id="7408932fdad65e4855a5098950fc1a2a" category="section-title">Recursos para desarrolladores de NetApp</block>
+  <block id="16761f90ea92726a06e16dfb23549c0a" category="inline-link">DevNet de NetApp</block>
+  <block id="19f1cb4e1ae35be5e7d353c5a9f02815" category="list-text"><block ref="19f1cb4e1ae35be5e7d353c5a9f02815" category="inline-link-rx"></block></block>
+  <block id="2f05e9dc94da2a63306ded34a65a024a" category="paragraph">Una ubicación central para desarrolladores que respalda a los partners y clientes de NetApp.</block>
+  <block id="8a32f68c174741ac95b09c594c822879" category="inline-link">NetApp IO - The Pub</block>
+  <block id="a29fe064588109f2ac8d48595ef06e31" category="list-text"><block ref="a29fe064588109f2ac8d48595ef06e31" category="inline-link-rx"></block></block>
+  <block id="eb64ffee348063568d6b0140fbf3af98" category="paragraph">Artículos de blog y otros recursos para apoyar a desarrolladores y administradores.</block>
+  <block id="58bf8b302985815533fd451d770a1b0a" category="section-title">Recursos de cloud de NetApp</block>
+  <block id="1273c8a63109161e6fd1f18d6998523f" category="inline-link">BlueXP de NetApp</block>
+  <block id="a3235da3acacf344734cc119c20ba900" category="list-text"><block ref="a3235da3acacf344734cc119c20ba900" category="inline-link-rx"></block></block>
+  <block id="4049649408c78f285cb012e2651847f4" category="paragraph">Sitio central de las soluciones cloud de NetApp.</block>
+  <block id="654f92d3e3cad866eb53b8787cc67444" category="inline-link">Consola Cloud Central de NetApp</block>
+  <block id="1f45f670e1231774c60ec8b4cae95f3a" category="list-text"><block ref="1f45f670e1231774c60ec8b4cae95f3a" category="inline-link-rx"></block></block>
+  <block id="6b75881aaba9107ac80de75cbb548445" category="paragraph">Consola de servicio Cloud Central de NetApp con inicio de sesión.</block>
+  <block id="f652657a114462923415d96870b111b4" category="summary">NetApp ofrece soporte para sus productos y servicios cloud de varias formas. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenga ayuda</block>
+  <block id="9a9999d7ae6f03b28df44f9616e27367" category="section-title">Opciones de autosoporte</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de conocimientos</block>
+  <block id="9448946e236deca6b076b6cc7c401779" category="list-text"><block ref="9448946e236deca6b076b6cc7c401779" category="inline-link-rx"></block></block>
+  <block id="402610772ffc3bf04855142997297391" category="paragraph">Busque en la base de conocimientos para encontrar artículos útiles para solucionar problemas.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Comunidades</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="27f3f3816928465a03369d5a937b657c" category="paragraph">Únase a una comunidad de NetApp para seguir las discusiones en curso o crear otras nuevas.</block>
+  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">Soporte de NetApp</block>
+  <block id="4e3ffaad45a8ae63f200119be8101498" category="list-text"><block ref="4e3ffaad45a8ae63f200119be8101498" category="inline-link-rx"></block></block>
+  <block id="3d32fc1a126e880a8ed715ad4b9c42f5" category="paragraph">Acceda a herramientas de solución de problemas, documentación y asistencia de soporte técnico.</block>
+  <block id="f48577c579044caf7c623829fc262319" category="sidebar">NetApp proporciona acceso a API programáticas para muchos de nuestros productos, así como soluciones de automatización programadas que pueden ayudarle a automatizar las cargas de trabajo para la cartera de productos y servicios de NetApp.</block>
+  <block id="6c2a9c611f48cae767f6ebea6fca0457" category="sidebar">Automatización de NetApp</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
+  <block id="e4b516b8f9ba094a78bbcef753a1bccc" category="sidebar">Soluciones resaltadas</block>
+  <block id="d6c522b828e70075f2c835bc3591b390" category="sidebar">Oracle con Azure NetApp Files</block>
+  <block id="0ded38c1f1be1ff13d904d6d996c5b69" category="sidebar">Amazon FSx para ONTAP: Recuperación ante desastres</block>
+  <block id="e880c82d33a4250426461e7aa14234c8" category="sidebar">Puesta en marcha de ONTAP desde el día 0/1</block>
+  <block id="0aae180e51442a68c9fbe9225b2bd737" category="sidebar">API de producto de NetApp</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="sidebar">ONTAP</block>
+  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="sidebar">BlueXP</block>
+  <block id="0165fb1aec27e9e91320972c89c21d7e" category="sidebar">Documentos de automatización de NetApp</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Descripción general</block>
+  <block id="03a85053364f989565c431e1f3cb14b6" category="sidebar">Estallido al cloud</block>
+  <block id="645a84975202e30700b572b49a5ee29d" category="sidebar">Recuperación tras siniestros</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="sidebar">Oracle</block>
+  <block id="096f3522cfa2f31de45d052b740adc65" category="sidebar">Cloud Volumes ONTAP para AWS</block>
+  <block id="2544021bbaa4bc6eadfddbb17edf7811" category="sidebar">Cloud Volumes ONTAP para Azure</block>
+  <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="sidebar">Cloud Volumes ONTAP para Google Cloud</block>
+  <block id="08253f1b3a2c24142d028a71b1585bde" category="sidebar">Día 0/1</block>
+  <block id="507a3a88cebc46603ce2be8eaa924eee" category="sidebar">Puesta en marcha</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
+</blocks>

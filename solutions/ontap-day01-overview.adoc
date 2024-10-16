@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: solutions/ontap-day01-overview.html 
+keywords: bluexp automation catalog, netapp automation solutions, ontap day 0/1, overview, introduction 
+summary: Puede utilizar la solución de automatización de ONTAP day 0/1 para poner en marcha y configurar un clúster de ONTAP con Ansible. 
+---
+= Descripción general de la solución ONTAP Day 0/1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar la solución de automatización de ONTAP day 0/1 para poner en marcha y configurar un clúster de ONTAP con Ansible. La solución está disponible en la link:https://console.bluexp.netapp.com/automationCatalog["Catálogo de automatización de BlueXP"^].
+
+
+
+== Opciones flexibles de puesta en marcha de ONTAP
+
+En función de sus requisitos, se puede usar hardware en las instalaciones o simular ONTAP para poner en marcha y configurar un clúster de ONTAP con Ansible.
+
+.Hardware en las instalaciones
+Puede poner en marcha esta solución con hardware en las instalaciones que ejecute ONTAP, como un sistema FAS o AFF. Debe utilizar una máquina virtual Linux para poner en marcha y configurar el clúster de ONTAP mediante Ansible.
+
+.Simular ONTAP
+Para implementar esta solución mediante un simulador de ONTAP, debe descargar la versión más reciente de Simulate ONTAP del sitio de soporte de NetApp. Simulate ONTAP es un simulador virtual para el software ONTAP. Simulate ONTAP se ejecuta en un hipervisor de VMware en un sistema Windows, Linux o Mac. Para hosts Windows y Linux, debe usar el hipervisor de VMware Workstation para ejecutar esta solución. Si tiene un sistema operativo Mac, utilice el hipervisor VMware Fusion.
+
+
+
+== Diseño en capas
+
+El marco de Ansible simplifica el desarrollo y la reutilización de las tareas lógicas y de ejecución de automatización. El marco hace una distinción entre las tareas de toma de decisiones (capa lógica) y los pasos de ejecución (capa de ejecución) en la automatización. Comprender cómo funcionan estas capas le permite personalizar la configuración.
+
+Un «libro de estrategia» de Ansible ejecuta una serie de tareas que van de principio a fin.  `site.yml`el libro de estrategia contiene `logic.yml` el libro de estrategia y `execution.yml` el libro de estrategia.
+
+Cuando se ejecuta una solicitud, `site.yml` el libro de aplicaciones realiza primero una llamada al `logic.yml` libro de aplicaciones y, a continuación, llama a él `execution.yml` para ejecutar la solicitud de servicio.
+
+No es necesario que utilice la capa lógica del marco. La capa lógica proporciona opciones para ampliar la capacidad del marco más allá de los valores codificados para la ejecución. Esto le permite personalizar las capacidades del marco si es necesario.
+
+.Capa lógica
+La capa lógica consta de lo siguiente:
+
+* El `logic.yml` libro de estrategia
+* Archivos de tareas lógicas dentro del `logic-tasks` directorio
+
+
+La capa lógica proporciona la capacidad de tomar decisiones complejas sin la necesidad de una integración personalizada significativa (por ejemplo, conectarse a ServiceNow). La capa lógica es configurable y proporciona la entrada a los microservicios.
+
+También se proporciona la capacidad de omitir la capa lógica. Si desea omitir la capa lógica, no defina la `logic_operation` variable. La invocación directa `logic.yml` del libro de estrategia proporciona la capacidad de realizar algún nivel de depuración sin ejecución. Puede utilizar una sentencia de depuración para verificar que el valor de `raw_service_request` es correcto.
+
+Consideraciones importantes:
+
+* El `logic.yml` libro de estrategia buscará `logic_operation` la variable. Si la variable está definida en la solicitud, carga un archivo de tareas desde el `logic-tasks` directorio. El archivo de tarea debe ser un archivo .yml. Si no hay ningún archivo de tarea coincidente y la `logic_operation` variable está definida, la capa lógica falla.
+* El valor por defecto de `logic_operation` la variable es `no-op`. Si la variable no está definida de forma explícita, se establece por defecto en `no-op`, que no ejecuta ninguna operación.
+* Si la `raw_service_request` variable ya está definida, la ejecución continúa a la capa de ejecución. Si la variable no está definida, la capa lógica falla.
+
+
+.Capa de ejecución
+La capa de ejecución consta de lo siguiente:
+
+* El `execution.yml` libro de estrategia
+
+
+La capa de ejecución realiza las llamadas API para configurar un clúster de ONTAP. El `execution.yml` playbook requiere que la `raw_service_request` variable se defina al ejecutarse.
+
+
+
+== Soporte para personalización
+
+Puede personalizar esta solución de varias maneras en función de sus requisitos.
+
+Las opciones de personalización incluyen:
+
+* Modificar libros de estrategia de Ansible
+* Agregar roles
+
+
+.Personalizar los archivos de Ansible
+La siguiente tabla describe los archivos Ansible personalizables que contiene esta solución.
+
+[cols="25,75"]
+|===
+| Ubicación | Descripción 
+
+
+ a| 
+`playbooks/inventory/hosts`
+| Contiene un único archivo con una lista de hosts y grupos. 
+
+
+ a| 
+`playbooks/group_vars/all/*`
+| Ansible proporciona una forma cómoda de aplicar variables a varios hosts a la vez. Puede modificar cualquiera o todos los archivos de esta carpeta, incluidos `cfg.yml`, `clusters.yml`, , `defaults.yml` `services.yml` `standards.yml` , , y `vault.yml`. 
+
+
+ a| 
+`playbooks/logic-tasks`
+| Admite tareas de toma de decisiones en Ansible y mantiene la separación de la lógica y la ejecución. Puede agregar archivos a esta carpeta que se correspondan con el servicio pertinente. 
+
+
+ a| 
+`playbooks/vars/*`
+| Los valores dinámicos utilizados en los libros de estrategia y roles de Ansible para permitir la personalización, flexibilidad y reutilización de las configuraciones. Si es necesario, puede modificar cualquiera o todos los archivos de esta carpeta. 
+|===
+.Personalizar roles
+También puede personalizar la solución agregando o cambiando funciones de Ansible, también denominadas microservicios. Para obtener más información, consulte link:ontap-day01-customize.html["Personalizar"].

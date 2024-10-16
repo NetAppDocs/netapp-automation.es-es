@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: api/aiqum.html 
+keywords: active iq, unified manager, active iq unified manager 
+summary: 'Active IQ Unified Manager (anteriormente Unified Manager de OnCommand) proporciona gestión y supervisión integrales para sus sistemas de ONTAP. También incluye una API DE REST para automatizar estas tareas y permitir la integración de terceros en sistemas compatibles.' 
+---
+= Active IQ Unified Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Active IQ Unified Manager (anteriormente Unified Manager de OnCommand) proporciona gestión y supervisión integrales para sus sistemas de ONTAP. También incluye una API DE REST para automatizar estas tareas y permitir la integración de terceros en sistemas compatibles.
+
+
+
+== Beneficios de la API de REST
+
+Hay varios beneficios cuando se usa la API DE REST que se proporciona con Active IQ Unified Manager.
+
+.Funcionalidades robustas
+Al utilizar la API de REST, puede acceder a las funcionalidades de Active IQ Unified Manager para gestionar los riesgos de disponibilidad, capacidad, seguridad, protección y rendimiento del almacenamiento.
+
+.Consolidación de la automatización
+Hay un único extremo de REST disponible para aprovisionar y gestionar tus cargas de trabajo. Esto ofrece un enfoque consolidado sencillo para implementar políticas de objetivos de nivel de servicio, redirigir eventos a herramientas de terceros y actuar como pasarela de API para acceder a la API de REST DE ONTAP a nivel de clúster individual.
+
+.Automatización en el nivel de centro de datos de la gestión de ONTAP
+Puede automatizar los flujos de trabajo de aprovisionamiento y gestión de ONTAP a nivel de centro de datos. La supervisión y la creación de informes también se pueden automatizar. Esto mejora la eficiencia y proporciona una base para la agregación a nivel de centro de datos.
+
+
+
+== Obtenga más información
+
+Hay varios recursos disponibles para ayudarte a empezar a usar la API de REST DE Active IQ Unified Manager.
+
+* https://docs.netapp.com/us-en/active-iq-unified-manager/api-automation/concept_get_started_with_um_apis.html["Primeros pasos con API de REST de Active IQ Unified Manager"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876865/html/index.html["Documentación sobre la API de Active IQ Unified Manager"^]
+* https://github.com/NetApp/Ansible-with-Active-IQ-Unified-Manager["Módulos de NetApp para Ansible"^]
+

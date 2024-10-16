@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: solutions/bac-overview.html 
+keywords: bluexp automation catalog, automation catalog, overview, introduction 
+summary: El catálogo de automatización de BlueXP  es una colección de soluciones de automatización disponibles para clientes, partners y empleados de NetApp. El catálogo tiene varias características y beneficios. 
+---
+= Información general del catálogo de automatización de BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El catálogo de automatización de BlueXP  es una colección de soluciones de automatización disponibles para clientes, partners y empleados de NetApp. El catálogo tiene varias características y beneficios.
+
+Ubicación única para sus necesidades de automatización:: Puede acceder a a https://console.bluexp.netapp.com/automationCatalog["Catálogo de automatización de BlueXP"^] través de la interfaz de usuario web de BlueXP . Esto proporciona una ubicación única para los scripts, libros de estrategia y módulos necesarios para mejorar la automatización y el funcionamiento de sus productos y servicios de NetApp.
+NetApp crea y prueba las soluciones:: Todas las soluciones de automatización y scripts han sido creadas y probadas por NetApp. Cada solución está dirigida a un caso de uso o solicitud específica de cliente. La mayor prioridad es la integración con los servicios de datos y archivos de NetApp.
+Documentación:: Cada una de las soluciones de automatización incluye documentación asociada que le ayuda a comenzar. Aunque se accede a las soluciones mediante la interfaz web de BlueXP , toda la documentación está disponible en este sitio. La documentación se organiza según los productos y servicios de cloud de NetApp.
+Una base sólida para el futuro:: NetApp se compromete a ayudar a los clientes a mejorar y optimizar la automatización de sus centros de datos y sus entornos de cloud. Esperamos seguir mejorando el catálogo de automatización de BlueXP  para abordar los requisitos de nuestros clientes, los cambios tecnológicos y la integración continua de productos.
+Queremos tener noticias suyas:: El equipo de automatización de la Oficina de la experiencia del cliente de NetApp (CXO) le gustaría recibir noticias suyas. Si tiene algún comentario, problema o solicitud de características, envíe un correo electrónico a mailto:ng-cxo-automation-admins@NetApp.com[cxo automation team].
+

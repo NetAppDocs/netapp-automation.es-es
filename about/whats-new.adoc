@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: about/whats-new.html 
+keywords: whats new, enhancements, new features 
+summary: NetApp actualiza regularmente las soluciones de automatización, las API DE REST de productos y el software relacionado para ofrecer nuevas funciones, mejoras y correcciones de errores. 
+---
+= Novedades de la automatización de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp actualiza regularmente las soluciones de automatización, las API DE REST de productos y el software relacionado para ofrecer nuevas funciones, mejoras y correcciones de errores.
+
+
+
+== 27 de julio de 2023
+
+.Cloud Volumes ONTAP
+La compatibilidad con Cloud Volumes ONTAP está organizada por el entorno de cloud público. Se proporciona una nueva solución para el siguiente entorno de cloud:
+
+* link:../solutions/cvo-gcp-burst-to-cloud.html["Cloud Volumes ONTAP para Google Cloud: Estallido a la nube"]
+
+
+
+
+== 04 de junio de 2023
+
+NetApp https://console.bluexp.netapp.com/automationCatalog["Catálogo de automatización de BlueXP"^] está disponible en la interfaz de usuario web de BlueXP . El catálogo de automatización ofrece acceso a soluciones que pueden ayudarlo con la implementación e integración automatizadas de los productos NetApp. La documentación de estas soluciones está organizada en varios productos o áreas funcionales diferentes, como se describe a continuación.
+
+.Amazon FSX para ONTAP de NetApp
+A continuación se proporcionan dos soluciones de Amazon FSx para NetApp ONTAP:
+
+* link:../solutions/fsxn-burst-to-cloud.html["Amazon FSx para NetApp ONTAP: Estallido a la nube"]
+* link:../solutions/fsxn-disaster-recovery.html["Amazon FSx para NetApp ONTAP: Recuperación ante desastres"]
+
+
+.Azure NetApp Files
+Se incluye una solución para ayudarle a poner en marcha Oracle con Azure NetApp Files:
+
+* link:../solutions/anf-oracle.html["Oracle con Azure NetApp Files"]
+
+
+.Cloud Volumes ONTAP
+La compatibilidad con Cloud Volumes ONTAP está organizada por el entorno de cloud público. Las soluciones iniciales se proporcionan para dos entornos cloud de la siguiente manera:
+
+* link:../solutions/cvo-aws-burst-to-cloud.html["AWS de Cloud Volumes ONTAP: Ráfagas en la nube"]
+* link:../solutions/cvo-azure-burst-to-cloud.html["Cloud Volumes ONTAP Azure: Ráfagas a la nube"]
+

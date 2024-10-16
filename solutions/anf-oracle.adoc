@@ -1,0 +1,360 @@
+---
+sidebar: sidebar 
+permalink: solutions/anf-oracle.html 
+keywords: bluexp automation catalog, netapp automation solutions, azure, azure netapp files, oracle 
+summary: Puede usar esta solución de automatización para aprovisionar volúmenes Azure NetApp Files e instalar Oracle en una máquina virtual disponible. A continuación, Oracle utiliza los volúmenes para el almacenamiento de datos. 
+---
+= Instalar Oracle mediante Azure NetApp Files
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede usar esta solución de automatización para aprovisionar volúmenes Azure NetApp Files e instalar Oracle en una máquina virtual disponible. A continuación, Oracle utiliza los volúmenes para el almacenamiento de datos.
+
+.Acerca de esta solución
+En general, el código de automatización proporcionado con esta solución realiza las siguientes acciones:
+
+* Configure una cuenta de NetApp en Azure
+* Configure un pool de capacidad de almacenamiento en Azure
+* Aprovisione los volúmenes Azure NetApp Files según la definición
+* Cree los puntos de montaje
+* Monte los volúmenes Azure NetApp Files en los puntos de montaje
+* Instale Oracle en el servidor Linux
+* Cree los listeners y la base de datos
+* Crear Bases de Datos de Conexión (PDB)
+* Inicie el listener y la instancia de Oracle
+* Instale y configure la `azacsnap` utilidad para tomar una instantánea
+
+
+.Antes de empezar
+Debe tener lo siguiente para completar la instalación:
+
+* Debe descargar https://console.bluexp.netapp.com/automationCatalog["Oracle con Azure NetApp Files"^] la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como archivo `na_oracle19c_deploy-master.zip`.
+* Una VM de Linux con las siguientes características:
++
+** RHEL 8 (Standard_D8s_v3-RHEL-8)
+** Se implementa en la misma red virtual de Azure utilizada para el aprovisionamiento de Azure NetApp Files
+
+
+* Una cuenta de Azure
+
+
+La solución de automatización se proporciona como una imagen y se ejecuta con Docker y Docker Compose. Debe instalar ambos en la máquina virtual Linux como se describe a continuación.
+
+También debe registrar la VM con RedHat mediante el comando `sudo subscription-manager register`. El comando le solicitará las credenciales de su cuenta. Si es necesario, puede crear una cuenta en \https://developers.redhat.com/.
+
+
+
+== Paso 1: Instale y configure Docker
+
+Instalar y configurar Docker en una máquina virtual de RHEL 8 Linux.
+
+.Pasos
+. Instale el software Docker con los siguientes comandos.
++
+[source, cli]
+----
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce --nobest -y
+----
+. Inicie Docker y muestre la versión para confirmar que la instalación se ha realizado correctamente.
++
+[source, cli]
+----
+systemctl start docker
+systemctl enable docker
+docker --version
+----
+. Añada el grupo Linux requerido con un usuario asociado.
++
+Primero comprueba si el grupo *docker* existe en tu sistema Linux. Si no es así, cree el grupo y agregue el usuario. De forma predeterminada, el usuario de shell actual se agrega al grupo.
+
++
+[source, cli]
+----
+sudo groupadd docker
+sudo usermod -aG docker $USER
+----
+. Active las nuevas definiciones de grupo y usuario
++
+Si ha creado un nuevo grupo con un usuario, debe activar las definiciones. Para ello, puede cerrar la sesión de Linux y volver a iniciarla. O bien puede ejecutar el siguiente comando.
+
++
+[source, cli]
+----
+newgrp docker
+----
+
+
+
+
+== Paso 2: Instale Docker Compose y las utilidades NFS
+
+Instale y configure Docker Compose junto con el paquete de utilidades NFS.
+
+.Pasos
+. Instale Docker Compose y muestre la versión para confirmar que la instalación se ha realizado correctamente.
++
+[source, cli]
+----
+dnf install curl -y
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+----
+. Instale el paquete de utilidades NFS.
++
+[source, cli]
+----
+sudo yum install nfs-utils
+----
+
+
+
+
+== Paso 3: Descargue los archivos de instalación de Oracle
+
+Descargue la instalación y los archivos de parches de Oracle necesarios, así como la `azacsnap` utilidad.
+
+.Pasos
+. Inicie sesión en su cuenta de Oracle según sea necesario.
+. Descargue los siguientes archivos.
++
+[cols="65,35"]
+|===
+| Archivo | Descripción 
+
+
+| LINUX.X64_193000_db_home.zip | instalador de base 19,3 
+
+
+| p31281355_190000_Linux-x86-64.zip | 19,8 parche RU 
+
+
+| p6880880_190000_Linux-x86-64.zip | opatch versión 12.2.0.1.23 
+
+
+| azacsnap_installer_v5.0.run | instalador de azacsnap 
+|===
+. Coloque todos los archivos de instalación en la carpeta `/tmp/archive`.
+. Asegúrese de que todos los usuarios del servidor de bases de datos tengan acceso completo (lectura, escritura, ejecución) a la carpeta `/tmp/archive`.
+
+
+
+
+== Paso 4: Preparar la imagen de Docker
+
+Debe extraer y cargar la imagen de Docker proporcionada con la solución de automatización.
+
+.Pasos
+. Copie el archivo de la solución `na_oracle19c_deploy-master.zip` en la máquina virtual donde se ejecutará el código de automatización.
++
+[source, cli]
+----
+scp -i ~/<private-key.pem> -r na_oracle19c_deploy-master.zip user@<IP_ADDRESS_OF_VM>
+----
++
+El parámetro de entrada `private-key.pem` es el archivo de clave privada utilizado para la autenticación de máquinas virtuales de Azure.
+
+. Desplácese a la carpeta correcta con el archivo de solución y descomprima el archivo.
++
+[source, cli]
+----
+unzip na_oracle19c_deploy-master.zip
+----
+. Navegue a la nueva carpeta `na_oracle19c_deploy-master` creada con la operación de descompresión y enumere los archivos. Debería ver el archivo `ora_anf_bck_image.tar`.
++
+[source, cli]
+----
+ls -lt
+----
+. Cargue el archivo de imagen de Docker. La operación de carga debería completarse normalmente en unos segundos.
++
+[source, cli]
+----
+docker load -i ora_anf_bck_image.tar
+----
+. Confirme que se ha cargado la imagen de Docker.
++
+[source, cli]
+----
+docker images
+----
++
+Deberías ver la imagen de Docker `ora_anf_bck_image` con la etiqueta `latest`.
+
++
+[listing]
+----
+   REPOSITORY          TAG       IMAGE ID      CREATED      SIZE
+ora_anf_bck_image    latest   ay98y7853769   1 week ago   2.58GB
+----
+
+
+
+
+== Paso 5: Cree un volumen externo
+
+Necesita un volumen externo para asegurarse de que los archivos de estado de Terraform y otros archivos importantes son persistentes. Estos archivos deben estar disponibles para que Terraform ejecute el flujo de trabajo y las implementaciones.
+
+.Pasos
+. Cree un volumen externo fuera de Docker Compose.
++
+Asegúrese de actualizar el nombre del volumen antes de ejecutar el comando.
+
++
+[source, cli]
+----
+docker volume create <VOLUME_NAME>
+----
+. Añada la ruta al volumen externo al `.env` archivo de entorno mediante el comando:
++
+`PERSISTENT_VOL=path/to/external/volume:/ora_anf_prov`.
+
++
+Recuerde mantener el contenido del archivo existente y el formato de dos puntos. Por ejemplo:
+
++
+[source, cli]
+----
+PERSISTENT_VOL= ora_anf _volume:/ora_anf_prov
+----
+. Actualice las variables de Terraform.
++
+.. Navegue a la carpeta `ora_anf_variables`.
+.. Confirme que existen los dos archivos siguientes `terraform.tfvars`: Y `variables.tf`.
+.. Actualice los valores en `terraform.tfvars` según sea necesario para el entorno.
+
+
+
+
+
+
+== Paso 6: Instalar Oracle
+
+Ahora puede provisionar e instalar Oracle.
+
+.Pasos
+. Instale Oracle con la siguiente secuencia de comandos.
++
+[source, cli]
+----
+docker-compose up terraform_ora_anf
+bash /ora_anf_variables/setup.sh
+docker-compose up linux_config
+bash /ora_anf_variables/permissions.sh
+docker-compose up oracle_install
+----
+. Vuelva a cargar las variables Bash y confirme mostrando el valor para `ORACLE_HOME`.
++
+.. `cd /home/oracle`
+.. `source .bash_profile`
+.. `echo $ORACLE_HOME`
+
+
+. Debe poder conectarse a Oracle.
++
+[source, cli]
+----
+sudo su oracle
+----
+
+
+
+
+== Paso 7: Validar la instalación de Oracle
+
+Debe confirmar que la instalación de Oracle se ha realizado correctamente.
+
+.Pasos
+. Conéctese al servidor Oracle de Linux y muestre una lista de los procesos de Oracle. Esto confirma que la instalación se ha completado como se esperaba y que la base de datos Oracle se está ejecutando.
++
+[source, cli]
+----
+ps -ef | grep ora
+----
+. Conéctese a la base de datos para examinar la configuración de la base de datos y confirmar que las PDB se han creado correctamente.
++
+[source, cli]
+----
+sqlplus / as sysdba
+----
++
+Debería ver una salida similar a la siguiente:
+
++
+[listing]
+----
+SQL*Plus: Release 19.0.0.0.0 - Production on Thu May 6 12:52:51 2021
+Version 19.8.0.0.0
+
+Copyright (c) 1982, 2019, Oracle. All rights reserved.
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.8.0.0.0
+----
+. Ejecute unos sencillos comandos SQL para confirmar que la base de datos está disponible.
++
+[source, sql]
+----
+select name, log_mode from v$database;
+show pdbs.
+----
+
+
+
+
+== Paso 8: Instale la utilidad azacsnap y realice una copia de seguridad de instantáneas
+
+Debe instalar y ejecutar la `azacsnap` utilidad para realizar un backup de snapshot.
+
+.Pasos
+. Instale el contenedor.
++
+[source, sql]
+----
+docker-compose up azacsnap_install
+----
+. Cambie a la cuenta de usuario de instantánea.
++
+[source, sql]
+----
+su - azacsnap
+execute /tmp/archive/ora_wallet.sh
+----
+. Configurar un archivo de detalles de copia de seguridad de almacenamiento. Esto creará el `azacsnap.json` archivo de configuración.
++
+[source, sql]
+----
+cd /home/azacsnap/bin/
+azacsnap -c configure –-configuration new
+----
+. Realizar un backup de snapshot.
++
+[source, sql]
+----
+azacsnap -c backup –-other data --prefix ora_test --retention=1
+----
+
+
+
+
+== Paso 9: Opcionalmente, migre una PDB local a la nube
+
+Opcionalmente, puede migrar la PDB local a la nube.
+
+.Pasos
+. Configure las variables en `tfvars` los archivos según sea necesario para su entorno.
+. Migre la PDB.
++
+[source, cli]
+----
+docker-compose -f docker-compose-relocate.yml up
+----
+

@@ -1,0 +1,289 @@
+---
+sidebar: sidebar 
+permalink: solutions/fsxn-burst-to-cloud.html 
+keywords: bluexp automation catalog, netapp automation solutions, fsx for ontap, burst to cloud 
+summary: Esta solución de automatización se puede usar para aprovisionar Amazon FSx para NetApp ONTAP con volúmenes y una FlexCache asociada. 
+---
+= Amazon FSx para NetApp ONTAP: Estallido a la nube
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esta solución de automatización se puede usar para aprovisionar Amazon FSx para NetApp ONTAP con volúmenes y una FlexCache asociada.
+
+
+NOTE: Amazon FSx para NetApp ONTAP también se conoce como *FSX para ONTAP*.
+
+.Acerca de esta solución
+En general, el código de automatización proporcionado con esta solución realiza las siguientes acciones:
+
+* Aprovisionar un sistema de archivos FSx para ONTAP de destino
+* Aprovisione las máquinas virtuales de almacenamiento (SVM) para el sistema de archivos
+* Cree una relación de paridad de clústeres entre los sistemas de origen y destino
+* Cree una relación entre iguales de SVM entre el sistema de origen y el de destino para FlexCache
+* Opcionalmente, crea volúmenes de FlexVol mediante FSx para ONTAP
+* Crea un volumen de FlexCache en FSx para ONTAP con el origen que apunta al almacenamiento on-premises
+
+
+La automatización se basa en Docker y Docker Compose que deben instalarse en la máquina virtual Linux como se describe a continuación.
+
+.Antes de empezar
+Debe tener lo siguiente para completar el aprovisionamiento y la configuración:
+
+* Debe descargar https://console.bluexp.netapp.com/automationCatalog["Amazon FSx para NetApp ONTAP: Estallido a la nube"^] la solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como archivo `AWS_FSxN_BTC.zip`.
+* Conectividad de red entre los sistemas de origen y destino.
+* Una VM de Linux con las siguientes características:
++
+** Distribución de Linux basada en Debian
+** Puesto en marcha en el mismo subconjunto de VPC utilizado para el aprovisionamiento de FSx para ONTAP
+
+
+* Cuenta de AWS.
+
+
+
+
+== Paso 1: Instale y configure Docker
+
+Instalar y configurar Docker en una máquina virtual Linux basada en Debian.
+
+.Pasos
+. Preparar el entorno.
++
+[source, cli]
+----
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+----
+. Instale Docker y verifique la instalación.
++
+[source, cli]
+----
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+docker --version
+----
+. Añada el grupo Linux requerido con un usuario asociado.
++
+Primero comprueba si el grupo *docker* existe en tu sistema Linux. Si no es así, cree el grupo y agregue el usuario. De forma predeterminada, el usuario de shell actual se agrega al grupo.
+
++
+[source, cli]
+----
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
+----
+. Active las nuevas definiciones de grupo y usuario
++
+Si ha creado un nuevo grupo con un usuario, debe activar las definiciones. Para ello, puede cerrar la sesión de Linux y volver a iniciarla. O bien puede ejecutar el siguiente comando.
+
++
+[source, cli]
+----
+newgrp docker
+----
+
+
+
+
+== Paso 2: Instale Docker Compose
+
+Instale Docker Compose en una máquina virtual Linux basada en Debian.
+
+.Pasos
+. Instale Docker Compose.
++
+[source, cli]
+----
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+----
+. Compruebe que la instalación se ha realizado correctamente.
++
+[source, cli]
+----
+docker-compose --version
+----
+
+
+
+
+== Paso 3: Preparar la imagen de Docker
+
+Debe extraer y cargar la imagen de Docker proporcionada con la solución de automatización.
+
+.Pasos
+. Copie el archivo de la solución `AWS_FSxN_BTC.zip` en la máquina virtual donde se ejecutará el código de automatización.
++
+[source, cli]
+----
+scp -i ~/<private-key.pem> -r AWS_FSxN_BTC.zip user@<IP_ADDRESS_OF_VM>
+----
++
+El parámetro de entrada `private-key.pem` es el archivo de claves privadas utilizado para la autenticación de máquinas virtuales de AWS (instancia de EC2).
+
+. Desplácese a la carpeta correcta con el archivo de solución y descomprima el archivo.
++
+[source, cli]
+----
+unzip AWS_FSxN_BTC.zip
+----
+. Navegue a la nueva carpeta `AWS_FSxN_BTC` creada con la operación de descompresión y enumere los archivos. Debería ver el archivo `aws_fsxn_flexcache_image_latest.tar.gz`.
++
+[source, cli]
+----
+ls -la
+----
+. Cargue el archivo de imagen de Docker. La operación de carga debería completarse normalmente en unos segundos.
++
+[source, cli]
+----
+docker load -i aws_fsxn_flexcache_image_latest.tar.gz
+----
+. Confirme que se ha cargado la imagen de Docker.
++
+[source, cli]
+----
+docker images
+----
++
+Deberías ver la imagen de Docker `aws_fsxn_flexcache_image` con la etiqueta `latest`.
+
++
+[listing]
+----
+   REPOSITORY              TAG     IMAGE ID      CREATED      SIZE
+aws_fsxn_flexcahce_image  latest  ay98y7853769  2 weeks ago  1.19GB
+----
+
+
+
+
+== Paso 4: Crear un archivo de entorno para las credenciales de AWS
+
+Se debe crear un archivo de variable local para la autenticación mediante la clave secreta y de acceso. A continuación, agregue el archivo al `.env` archivo.
+
+.Pasos
+. Cree el `awsauth.env` archivo en la siguiente ubicación:
++
+`path/to/env-file/awsauth.env`
+
+. Agregue el siguiente contenido al archivo:
++
+[listing]
+----
+access_key=<>
+secret_key=<>
+----
++
+El formato *debe* ser exactamente como se muestra arriba sin ningún espacio entre `key` y. `value`
+
+. Agregue la ruta de acceso absoluta al `.env` archivo mediante la `AWS_CREDS` variable. Por ejemplo:
++
+`AWS_CREDS=path/to/env-file/awsauth.env`
+
+
+
+
+
+== Paso 5: Cree un volumen externo
+
+Necesita un volumen externo para asegurarse de que los archivos de estado de Terraform y otros archivos importantes son persistentes. Estos archivos deben estar disponibles para que Terraform ejecute el flujo de trabajo y las implementaciones.
+
+.Pasos
+. Cree un volumen externo fuera de Docker Compose.
++
+Asegúrese de actualizar el nombre del volumen (último parámetro) al valor apropiado antes de ejecutar el comando.
+
++
+[source, cli]
+----
+docker volume create aws_fsxn_volume
+----
+. Añada la ruta al volumen externo al `.env` archivo de entorno mediante el comando:
++
+`PERSISTENT_VOL=path/to/external/volume:/volume_name`
+
++
+Recuerde mantener el contenido del archivo existente y el formato de dos puntos. Por ejemplo:
+
++
+[source, cli]
+----
+PERSISTENT_VOL=aws_fsxn_volume:/aws_fsxn_flexcache
+----
++
+En su lugar, se puede agregar un recurso compartido de NFS como volumen externo mediante un comando, como el siguiente:
+
++
+`PERSISTENT_VOL=nfs/mnt/document:/aws_fsx_flexcache`
+
+. Actualice las variables de Terraform.
++
+.. Navegue a la carpeta `aws_fsxn_variables`.
+.. Confirme que existen los dos archivos siguientes `terraform.tfvars`: Y `variables.tf`.
+.. Actualice los valores en `terraform.tfvars` según sea necesario para el entorno.
++
+Consulte https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/fsx_ontap_file_system["Recurso de Terraform: aws_fsx_ONTAP_file_system"^] para obtener más información.
+
+
+
+
+
+
+
+== Paso 6: Aprovisionar Amazon FSx para NetApp ONTAP y FlexCache
+
+Puedes aprovisionar Amazon FSx para NetApp ONTAP y FlexCache.
+
+.Pasos
+. Navegue hasta la raíz de la carpeta (AWS_FSXN_BTC) y ejecute el comando de aprovisionamiento.
++
+[source, cli]
+----
+docker-compose -f docker-compose-provision.yml up
+----
++
+Este comando crea dos contenedores. El primer contenedor pone en marcha FSx para ONTAP y el segundo contenedor crea las relaciones entre iguales de clústeres, las relaciones entre iguales de SVM, el volumen de destino y FlexCache.
+
+. Supervisar el proceso de aprovisionamiento.
++
+[source, cli]
+----
+docker-compose -f docker-compose-provision.yml logs -f
+----
++
+Este comando le da la salida en tiempo real, pero se ha configurado para capturar los logs a través del archivo `deployment.log`. Puede cambiar el nombre de estos archivos log editando el `.env` archivo y actualizando las variables `DEPLOYMENT_LOGS`.
+
+
+
+
+
+== Paso 7: Destruye Amazon FSx para NetApp ONTAP y FlexCache
+
+Opcionalmente, puedes eliminar y eliminar Amazon FSx for NetApp ONTAP y FlexCache.
+
+. Defina la variable `flexcache_operation` del `terraform.tfvars` archivo en Destruir.
+. Navegue hasta la raíz de la carpeta (AWS_FSXN_BTC) y ejecute el siguiente comando.
++
+[source, cli]
+----
+docker-compose -f docker-compose-destroy.yml up
+----
++
+Este comando crea dos contenedores. El primer contenedor elimina FlexCache y el segundo contenedor elimina FSx para ONTAP.
+
+. Supervisar el proceso de aprovisionamiento.
++
+[source, cli]
+----
+docker-compose -f docker-compose-destroy.yml logs -f
+----
+
