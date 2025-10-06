@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: solutions/cvo-gcp-burst-to-cloud.html 
-keywords: bluexp automation catalog, netapp automation solutions, gcp, cloud volumes ontap, burst to cloud 
-summary: Este artículo es compatible con la solución de automatización de cloud de NetApp Cloud Volumes ONTAP para Google, que está disponible para los clientes de NetApp en el catálogo de automatización de BlueXP . 
+keywords: bluexp automation catalog, netapp automation solutions, gcp, cloud volumes ontap, burst to cloud, netapp, console 
+summary: Este artículo respalda la solución NetApp Cloud Volumes ONTAP para Google Cloud Automation, que está disponible para los clientes de NetApp en el Catálogo de automatización de la consola de NetApp . 
 ---
 = Cloud Volumes ONTAP para Google Cloud: Estallido a la nube
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: Este artículo es compatible con la solución de automatización de clo
 
 
 [role="lead"]
-Este artículo es compatible con la solución de automatización de cloud de NetApp Cloud Volumes ONTAP para Google, que está disponible para los clientes de NetApp en el catálogo de automatización de BlueXP .
+Este artículo respalda la solución NetApp Cloud Volumes ONTAP para Google Cloud Automation, que está disponible para los clientes de NetApp en el Catálogo de automatización de la consola de NetApp .
 
 La solución de automatización de Cloud Volumes ONTAP para Google Cloud automatiza la puesta en marcha en contenedores de Cloud Volumes ONTAP para Google Cloud, lo que le permite poner en marcha Cloud Volumes ONTAP para Google Cloud rápidamente sin intervención manual.
 
 .Antes de empezar
-* Debe descargar la link:https://console.bluexp.netapp.com/automationCatalog["Cloud Volumes ONTAP para Google Cloud: Estallido a la nube"^] solución de automatización a través de la interfaz de usuario web de BlueXP . La solución está empaquetada como `cvo_gcp_flexcache.zip`.
+* Debes descargar ellink:https://console.netapp.com/automationCatalog["Cloud Volumes ONTAP para Google Cloud: Estallido a la nube"^] Solución de automatización a través de la interfaz de usuario web de la consola.  La solución se presenta en el siguiente formato: `cvo_gcp_flexcache.zip` .
 * Debe instalar una máquina virtual Linux en la misma red que Cloud Volumes ONTAP.
 * Después de instalar la máquina virtual Linux, debe seguir los pasos de esta solución para instalar las dependencias necesarias.
 
@@ -184,7 +184,7 @@ NOTE: Puede cambiar el nombre de la imagen de Docker si es necesario. Si cambia 
 
 En esta etapa, debe actualizar `cxo-automation-gcp.json` el archivo con una clave de cuenta de servicio para autenticar al proveedor de Google Cloud.
 
-. Cree una cuenta de servicio con permisos para implementar Cloud Volumes ONTAP y el conector BlueXP . link:https://cloud.google.com/iam/docs/service-accounts-create["Obtenga más información sobre la creación de cuentas de servicio."^]
+. Cree una cuenta de servicio con permisos para implementar Cloud Volumes ONTAP y un agente de consolalink:https://cloud.google.com/iam/docs/service-accounts-create["Obtenga más información sobre la creación de cuentas de servicio."^]
 . Descargue el archivo de claves de la cuenta y actualice `cxo-automation-gcp.json` el archivo con la información del archivo de claves.  `cxo-automation-gcp.json`El archivo se encuentra en `cvo_gcp_variables` la carpeta.
 +
 .Ejemplo
@@ -211,26 +211,26 @@ El formato de archivo debe ser exactamente como se muestra anteriormente.
 
 
 
-== Paso 4: Suscribirse a BlueXP 
+== Paso 4: Regístrese en NetApp Intelligent Services
 
-Puede suscribirse a NetApp BlueXP  en Google Cloud Marketplace.
+Regístrese en NetApp Intelligent Services a través de su proveedor de nube para pagar por hora (PAYGO) o mediante un contrato anual. Los servicios inteligentes de NetApp incluyen NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience y NetApp Disaster Recovery. La clasificación de datos de NetApp está incluida en su suscripción sin costo adicional.
 
 .Pasos
-. Navegue hasta link:https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Consola de Google Cloud"^]y seleccione *Suscribirse a NetApp BlueXP *.
-. Configure el portal de BlueXP  para importar la suscripción de SaaS a BlueXP .
+. Navegar hasta ellink:https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Consola de Google Cloud"^] y seleccione *Suscribirse a los servicios inteligentes de NetApp *.
+. Configure el portal de la consola de NetApp para importar la suscripción de SaaS a la consola.
 +
-Puedes configurarlo directamente desde Google Cloud Platform. Se le redirigirá al portal de BlueXP  para confirmar la configuración.
+Puede configurar esto directamente desde Google Cloud Platform.  Serás redirigido al portal de la consola para confirmar la configuración.
 
-. Confirme la configuración en el portal de BlueXP  seleccionando *Guardar*.
+. Confirme la configuración en el portal de la consola seleccionando *Guardar*.
 
 
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html#associate-a-marketplace-subscription-with-google-cloud-credentials["Administrar las credenciales y suscripciones de Google Cloud para BlueXP"^].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/console-setup-admin/task-adding-gcp-accounts.html#associate-a-marketplace-subscription-with-google-cloud-credentials["Administrar credenciales y suscripciones de Google Cloud para la consola de NetApp"^] .
 
 
 
 == Paso 5: Habilita las API de Google Cloud necesarias
 
-Debes habilitar las siguientes API de Google Cloud en tu proyecto para implementar Cloud Volumes ONTAP y Connector.
+Debe habilitar las siguientes API de Google Cloud en su proyecto para implementar Cloud Volumes ONTAP y el agente de la consola.
 
 * API de Cloud Deployment Manager V2
 * API de registro en la nube
@@ -309,7 +309,7 @@ Debe ver los siguientes archivos en la carpeta:
 Debe leer la documentación de soporte específica cuando modifique cualquiera de los valores de variables del `terraform.tfvars` archivo. Los valores pueden variar en función de la región, las zonas de disponibilidad y otros factores compatibles con Cloud Volumes ONTAP para Google Cloud. Esto incluye licencias, tamaño de disco y tamaño de máquina virtual para nodos individuales y pares de alta disponibilidad.
 
 +
-Todas las variables de soporte para los módulos Conector y Cloud Volumes ONTAP Terraform ya están definidas en el `variables.tf` archivo. Debe hacer referencia a los nombres de variables en el `variables.tf` archivo antes de agregarlos al `terraform.tfvars` archivo.
+Todas las variables de soporte para el agente de la consola y los módulos Terraform de Cloud Volumes ONTAP ya están definidas en el `variables.tf` archivo.  Debes hacer referencia a los nombres de las variables en el `variables.tf` archivo antes de agregarlo al `terraform.tfvars` archivo.
 
 . En función de sus requisitos, puede activar o desactivar FlexCache and FlexClone configurando las siguientes opciones en `true` o `false`.
 +
